@@ -1,0 +1,64 @@
+---
+title: "biooracle"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Extra R-language tools to supplement [biooracler R package](https://github.com/bio-oracle/biooracler). This package serves up R scripts to create a local data repository, or to update a local data repository on a regular basis.  
+
+# Requirements for package
+
+From CRAN
+
+  + [R v4.1+](https://www.r-project.org/)
+  + [rlang](https://CRAN.R-project.org/package=rlang)
+  + [stars](https://CRAN.R-project.org/package=stars)
+  + [sf](https://CRAN.R-project.org/package=sf)
+  + [dplyr](https://CRAN.R-project.org/package=dplyr)
+  + [tidyr](https://CRAN.R-project.org/package=tidyr)
+  
+From github
+
+  + [biooracler](https://github.com/bio-oracle/biooracler)
+
+
+# Installation
+
+```
+# install.packages(remotes)
+remotes::install_github("bio-oracle/biooracler")
+remotes::install_github("BigelowLab/biooracle")
+```
+
+# Set up a data directory
+
+You can store the path to your chosen data directory. It will persist between R sessions.
+
+```{r setup_data_dir}
+library(biooracle)
+set_biooracle_root("~/Library/CloudStorage/Dropbox/data/biooracle")
+```
+
+We'll be creating a new local dataset for the Northwest Atlantic (nwa) which has the bounding box `{r} bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7)`.
+
+```{r make_nwa}
+nwa_path = biooracle_path("nwa") |> make_path()
+biooracle_path() |> dir(full.names = TRUE)
+```
+
+
+```{r download}
+dataset_id = "thetao_ssp119_2020_2100_depthmin"
+newfile = fetch_biooracle(dataset_id, 
+                          bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7))
+```
+
+
+```{r read}
+x = stars::read_stars(newfile)
+x
+```
+

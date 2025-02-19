@@ -1,0 +1,19 @@
+Package: biooracle
+Type: Package
+Title: Bio-Oracle tools
+Version: 0.1.0
+Author: Ben Tupper [aut, cre] <btupper@bigelow.org>
+Maintainer: Ben Tupper <btupper@bigelow.org>
+URL: https://github.com/bigelowlab/biooracle
+Description: R tools to augment Bio-Oracle's biooracler package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)
+Imports:
+  rlang,
+  biooracler,
+  stars,
+  sf,
+  tidyr,
+  dplyr
