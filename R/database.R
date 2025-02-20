@@ -81,14 +81,22 @@ read_database <- function(path = ".", filename = "database"){
                                           year = readr::col_character() ))
 }
 
+#' Retrieve the database pre-defined variable names
+#'
+#' @export
+#' @return charcater vector of variable names
+database_variables = function(){
+  c("scenario", "year", "z", "param", "trt")
+}
+
 #' Select just the db columns
 #' 
 #' @export
 #' @param x database table
 #' @param cols chr, the column names to keep
 #' @return a database table
-select_database = function(x, cols = c("scenario", "year", "z", "param", "trt")){
-  dplyr::select(x, dplyr::all_of(c("scenario", "year", "z", "param", "trt")))
+select_database = function(x, cols = database_variables()){
+  dplyr::select(x, dplyr::all_of(cols))
 }
 
 #' Write the file-list database

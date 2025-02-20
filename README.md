@@ -27,7 +27,10 @@ You can store the path to your chosen data directory. It will persist
 between R sessions so you don’t have to do it each time.
 
 ``` r
-library(biooracle)
+suppressPackageStartupMessages({
+  library(biooracle)
+  library(dplyr)
+})
 set_biooracle_root("~/Library/CloudStorage/Dropbox/data/biooracle")
 ```
 
@@ -101,15 +104,15 @@ archive_biooracle(newfile, path = nwa_path)
     ##    scenario year  z        param  trt  
     ##    <chr>    <chr> <chr>    <chr>  <chr>
     ##  1 ssp119   2020  depthmin thetao ltmax
-    ##  2 ssp119   2030  depthmin thetao ltmax
-    ##  3 ssp119   2040  depthmin thetao ltmax
-    ##  4 ssp119   2050  depthmin thetao ltmax
-    ##  5 ssp119   2060  depthmin thetao ltmax
-    ##  6 ssp119   2070  depthmin thetao ltmax
-    ##  7 ssp119   2080  depthmin thetao ltmax
-    ##  8 ssp119   2090  depthmin thetao ltmax
-    ##  9 ssp119   2020  depthmin thetao ltmin
-    ## 10 ssp119   2030  depthmin thetao ltmin
+    ##  2 ssp119   2020  depthmin thetao ltmin
+    ##  3 ssp119   2020  depthmin thetao max  
+    ##  4 ssp119   2020  depthmin thetao mean 
+    ##  5 ssp119   2020  depthmin thetao min  
+    ##  6 ssp119   2020  depthmin thetao range
+    ##  7 ssp119   2020  depthmin thetao sd   
+    ##  8 ssp119   2030  depthmin thetao ltmax
+    ##  9 ssp119   2030  depthmin thetao ltmin
+    ## 10 ssp119   2030  depthmin thetao max  
     ## # ℹ 46 more rows
 
 # Read the database catalog
@@ -126,13 +129,59 @@ db = read_database(nwa_path) |>
     ##    scenario year  z        param  trt  
     ##    <chr>    <chr> <chr>    <chr>  <chr>
     ##  1 ssp119   2020  depthmin thetao ltmax
-    ##  2 ssp119   2030  depthmin thetao ltmax
-    ##  3 ssp119   2040  depthmin thetao ltmax
-    ##  4 ssp119   2050  depthmin thetao ltmax
-    ##  5 ssp119   2060  depthmin thetao ltmax
-    ##  6 ssp119   2070  depthmin thetao ltmax
-    ##  7 ssp119   2080  depthmin thetao ltmax
-    ##  8 ssp119   2090  depthmin thetao ltmax
-    ##  9 ssp119   2020  depthmin thetao ltmin
-    ## 10 ssp119   2030  depthmin thetao ltmin
+    ##  2 ssp119   2020  depthmin thetao ltmin
+    ##  3 ssp119   2020  depthmin thetao max  
+    ##  4 ssp119   2020  depthmin thetao mean 
+    ##  5 ssp119   2020  depthmin thetao min  
+    ##  6 ssp119   2020  depthmin thetao range
+    ##  7 ssp119   2020  depthmin thetao sd   
+    ##  8 ssp119   2030  depthmin thetao ltmax
+    ##  9 ssp119   2030  depthmin thetao ltmin
+    ## 10 ssp119   2030  depthmin thetao max  
     ## # ℹ 46 more rows
+
+# Read in data from the database
+
+You can use a portion of the database to read in a `stars` object. Keep
+in mind that if you are reading multiple over mutlple decades, then each
+variable must have the same number of time steps.
+
+``` r
+x = db |>
+  dplyr::mutate(year = as.numeric(year)) |>
+  dplyr::filter(year >= 2070) |>
+  read_biooracle(, path = nwa_path) |>
+  print()
+```
+
+    ## stars object with 3 dimensions and 7 attributes
+    ## attribute(s):
+    ##                      Min.    1st Qu.    Median      Mean   3rd Qu.      Max.
+    ## thetao_ltmax  -0.64297539 1.89211679 2.1213403 4.1633015 4.1325927 31.248983
+    ## thetao_ltmin  -2.00000000 1.80401134 1.8825923 2.4666165 2.7054288 12.447174
+    ## thetao_max     0.46041700 1.94233787 2.4119213 5.0367358 5.3864827 33.908306
+    ## thetao_mean   -1.06481194 1.86144698 1.9767619 3.2299667 3.4484773 18.037924
+    ## thetao_min    -2.00000000 1.41676116 1.8234118 1.7105341 1.9514574  9.975613
+    ## thetao_range   0.04843726 0.12690720 0.6352606 3.3517626 5.0061388 33.088707
+    ## thetao_sd      0.02830037 0.06138093 0.2785121 0.4090969 0.6726204  3.425986
+    ##                 NA's
+    ## thetao_ltmax  287604
+    ## thetao_ltmin  287604
+    ## thetao_max    287604
+    ## thetao_mean   287604
+    ## thetao_min    287604
+    ## thetao_range  287604
+    ## thetao_sd     287604
+    ## dimension(s):
+    ##      from  to offset delta x/y
+    ## x       1 691    -77  0.05 [x]
+    ## y       1 405  56.75 -0.05 [y]
+    ## time    1   3   2070    10
+
+``` r
+plot(x['thetao_mean'])
+```
+
+    ## downsample set to 1
+
+![](README_files/figure-gfm/plot_again-1.png)<!-- -->

@@ -33,7 +33,10 @@ remotes::install_github("BigelowLab/biooracle")
 You can store the path to your chosen data directory. It will persist between R sessions so you don't have to do it each time.
 
 ```{r setup_data_dir}
-library(biooracle)
+suppressPackageStartupMessages({
+  library(biooracle)
+  library(dplyr)
+})
 set_biooracle_root("~/Library/CloudStorage/Dropbox/data/biooracle")
 ```
 
@@ -80,3 +83,17 @@ db = read_database(nwa_path) |>
 ```
 
 
+# Read in data from the database
+
+You can use a portion of the database to read in a `stars` object.  Keep in mind that if you are reading multiple over mutlple decades, then each variable must have the same number of time steps.
+
+```{r read_biooracle}
+x = db |>
+  dplyr::mutate(year = as.numeric(year)) |>
+  dplyr::filter(year >= 2070) |>
+  read_biooracle(, path = nwa_path) |>
+  print()
+```
+```{r plot_again}
+plot(x['thetao_mean'])
+```

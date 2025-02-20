@@ -60,3 +60,65 @@ read_biooracle <- function(x,
   
   S
 }
+
+#' Write a Bio-Oracle stars object guided by a database table
+#' 
+#' @export
+#' @param x stars object with one or more params at one or more times
+#' @param db biooralce database
+#' @param path chr, the data path
+#' @return the input `x` object (suitable for piping)
+write_biooracle = function(x, db, path = "."){
+  
+  nvars = length(names(x))
+  d = dim(x)
+  ntime = if(length(d) == 3) d[3] else 0
+  
+  db = dplyr::mutate(db, var = paste(.data$param, .data$trt, sep = "_"),
+                     fname = compose_filename(.data, path = path)) 
+  
+  if (ntime > 0){
+    # there are time layers
+    if (nrow(db) != (nvars * ntime)){
+      msg = sprintf("database must have same number of rows (%i) as stars object has layers (%i)",
+                    nrow(db), nvars * ntime)
+      stop(msg)
+    }
+    years = format(stars::st_get_dimension_values(x, "time"), "%Y")
+    db = db |>
+      dplyr::mutate(year = as.character(.data$year)) |>
+      dplyr::group_by(var) |>
+      dplyr::group_map(
+        function(tbl, key, x = NULL, path = NULL, years = NULL){
+          tbl |> 
+            dplyr::rowwise() |>
+            dplyr::group_map(
+              function(row, k){
+                i = which(years == row$year)
+                ok = make_path(dirname(row$fname))
+                x[key$var[1]] |>
+                  dplyr::slice("time", i) |>
+                  stars::write_stars(row$fname)
+                row
+              }) |> 
+            dplyr::bind_rows()
+        }, x = x, path = path, years = years) 
+    
+  } else {
+    # no Z (time)
+    if (nrow(db) != nvars) {
+      stop("database must have one row per stars attribute")
+    }
+    db >
+      dplyr::group_by(var) |>
+      dplyr::group_map(
+        function(tbl, key, x = NULL, path = NULL){
+          ok = make_path(dirname(tbl$fname))
+          x[key$var[1]] |>
+            stars::write_stars(tbl$fname)
+        }, x = x, path = path)
+    
+  }
+  x
+}
+

@@ -4,7 +4,7 @@
 \alias{select_database}
 \title{Select just the db columns}
 \usage{
-select_database(x, cols = c("scenario", "year", "z", "param", "trt"))
+select_database(x, cols = database_variables())
 }
 \arguments{
 \item{x}{database table}

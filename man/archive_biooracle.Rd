@@ -26,7 +26,7 @@ database (if any, otherwise start a new one.)}
 input \code{x} is a filename.}
 }
 \value{
-a small database (table) of metadata
+a small database (table) of metadata for files saved
 }
 \description{
 Archiving involves writing each layer to (date, depth and variable slice) to a

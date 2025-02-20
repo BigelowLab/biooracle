@@ -14,7 +14,7 @@
 #'   database (if any, otherwise start a new one.)
 #' @param cleanup logical, if TRUE then remove the source file **if** the 
 #'   input `x` is a filename.
-#' @return a small database (table) of metadata
+#' @return a small database (table) of metadata for files saved
 archive_biooracle = function(x, path = ".", dataset_id = NULL,
                              append_db = TRUE,
                              cleanup = TRUE){
@@ -29,30 +29,10 @@ archive_biooracle = function(x, path = ".", dataset_id = NULL,
     if (is.null(dataset_id)) stop("if x is a stars object then dataset_id is required")
   }
   
-  years = format(stars::st_get_dimension_values(x, "time"), "%Y")
-  db = compose_database(x, dataset_id) |>
-    dplyr::mutate(var = paste(.data$param, .data$trt, sep = "_"),
-                  year = as.character(year),
-                  fname = compose_filename(.data, path = path)) |>
-    dplyr::group_by(var) |>
-    dplyr::group_map(
-      function(tbl, key, x = NULL, path = NULL, years = NULL){
-        tbl |> 
-          dplyr::rowwise() |>
-          dplyr::group_map(
-            function(row, k){
-              i = which(years == row$year)
-              ok = make_path(dirname(row$fname))
-              x[key$var[1]] |>
-                dplyr::slice("time", i) |>
-                stars::write_stars(row$fname)
-              row
-            }) |> 
-          dplyr::bind_rows()
-      }, x = x, path = path, years = years) |>
-    dplyr::bind_rows()
+  db = compose_database(x, dataset_id) 
+  x = write_biooracle(x, db, path)
   DB = append_database(db, path)
   
   if (cleanup && is_filename) ok = file.remove(filename)
-  dplyr::select(db, dplyr::all_of(c("scenario", "year", "z", "param", "trt")))
+  select_database(db)
 }
