@@ -9,6 +9,8 @@ fetch_biooracle(
   vars = NULL,
   time = NULL,
   bb = NULL,
+  data_dir = NULL,
+  archive = !is.null(data_dir),
   ...
 )
 }
@@ -21,6 +23,12 @@ fetch_biooracle(
 
 \item{bb}{bounding box (or object from which \link[sf:st_bbox]{sf::st_bbox} can be derived)
 (defaults to max spatial range)}
+
+\item{data_dir}{NULL or a character data path.  Not to be confused with \code{temp_path}
+argument for \code{download_biooracle} that may be passed via \code{...}}
+
+\item{archive}{logical, if TRUE and \code{data_dir} is not NULL, then archive the
+result.}
 
 \item{...}{other arguments for download_biooracle}
 }

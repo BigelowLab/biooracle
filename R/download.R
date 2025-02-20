@@ -1,3 +1,11 @@
+#' Retrieve the current Bio-Oracle URL for griddap
+#' 
+#' @export
+#' @return character URL
+biooracle_url = function(){
+  "https://erddap.bio-oracle.org/erddap/griddap"
+}
+
 #' Generate constrints query gicen the dataset_id, variables, time and bounding box
 #'
 #' @param dataset_id char, the dataset identifier
@@ -75,12 +83,18 @@ generate_constraints = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
 #' @param time NULL, POSIXct or Date min and max, (defaults to all)
 #' @param bb bounding box (or object from which [sf::st_bbox] can be derived)
 #'   (defaults to max spatial range)
+#' @param data_dir NULL or a character data path.  Not to be confused with `temp_path`
+#'   argument for `download_biooracle` that may be passed via `...`
+#' @param archive logical, if TRUE and `data_dir` is not NULL, then archive the
+#'   result.
 #' @param ... other arguments for download_biooracle
 #' @return the name of the file retrieved
 fetch_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
                            vars = NULL, 
                            time = NULL,
                            bb = NULL,
+                           data_dir = NULL,
+                           archive = !is.null(data_dir),
                            ...){
   
   constraints = generate_constraints(dataset_id, 
@@ -88,7 +102,12 @@ fetch_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
                                     time = time,
                                     bb = bb)
 
-  download_biooracle(dataset_id, constraints = constraints, ...)
+  newfile = download_biooracle(dataset_id, constraints = constraints, ...)
+  if (archive && !is.null(data_dir)){
+    ok = make_path(data_dir)
+    db = archive_biooracle(newfile, path = data_path)
+  }
+  newfile
 }
 
 #' Downloads a file using [biooracler::download_layers]
@@ -101,7 +120,7 @@ fetch_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
 #' @return the fully qualified downloaded file name
 download_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
                               constraints = NULL, 
-                              base_url = "https://erddap.bio-oracle.org/erddap/griddap",
+                              base_url = biooracle_url(),
                               temp_path = biooracle_path("temp")){
   
   if (!dir.exists(temp_path)) ok = make_path(temp_path)
@@ -119,62 +138,4 @@ download_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
 }
 
 
-#' Given a stars object and an dataset_id, compose a small database
-#' of the files that might be generated.
-#' 
-#' @export
-#' @param x stars object
-#' @param id chr, a dataset_id like "thetao_ssp119_2020_2100_depthmin"
-#' @return a tabular database with scenario, year, z, param and trt
-compose_db = function(x, id){
-  year = stars::st_get_dimension_values(x, "time") |>
-    format("%Y")
-  ss = strsplit(id[1], "_", fixed = TRUE)[[1]]
-  len = length(ss)
-  scenario = switch(as.character(len),
-                    "5" = ss[len-3],
-                    "6" = ss[len-3],
-                    stop("id not known: ", id))
-  z = ss[len]
-  tidyr::expand_grid(
-        scenario,
-        year,
-        z,
-        param = names(x)) |>
-    tidyr::separate_wider_delim(dplyr::all_of("param"),
-                                delim = "_",
-                                names = c("param", "trt"))
-}
 
-#' Archive a downloaded Bio-Oracle netcdf file (see [fetch_biooracle]).
-#' 
-#' Archiving involves writing each layer to (date, depth and variable slice) to a 
-#' regional subfolder.  Files are organized into decadal subdirectories.  Metadata 
-#' to help navigate the archive are organized into the `database` file.  See 
-#' [read_database] for details.
-#' 
-#' @export
-#' @param x stars or chr a stars object or the name of the file to archive 
-#' @param dataset_id chr, only required if `x` is a stars object
-#' @param path chr the output path
-#' @return a small database (table) of metadata
-archive_biooracle = function(x, path = ".", dataset_id = NULL){
-  
-  if (!inherits(x, "stars")) {
-    dataset_id = substring(x, sub(".nc", "", basename(x), fixed = TRUE))
-    x = stars::read_stars(x)
-  } else {
-    if (is.null(dataset_id)) stop("if x is a stars object then dataset_id is required")
-  }
-  
-  
-  db = compose_db(x, dataset_id) 
-  
-  
-  
-  
-  
-  
-  
-  
-}

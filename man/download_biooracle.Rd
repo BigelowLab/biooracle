@@ -7,7 +7,7 @@
 download_biooracle(
   dataset_id = "thetao_ssp119_2020_2100_depthmin",
   constraints = NULL,
-  base_url = "https://erddap.bio-oracle.org/erddap/griddap",
+  base_url = biooracle_url(),
   temp_path = biooracle_path("temp")
 )
 }

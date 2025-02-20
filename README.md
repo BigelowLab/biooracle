@@ -3,8 +3,7 @@ biooracle
 
 Extra R-language tools to supplement [biooracler R
 package](https://github.com/bio-oracle/biooracler). This package serves
-up R scripts to create a local data repository, or to update a local
-data repository on a regular basis.
+up R scripts to create a local data repository.
 
 # Requirements for package
 
@@ -15,21 +14,17 @@ From CRAN
 - [stars](https://CRAN.R-project.org/package=stars)
 - [sf](https://CRAN.R-project.org/package=sf)
 - [dplyr](https://CRAN.R-project.org/package=dplyr)
-
-From github
-
-- [biooracler](https://github.com/bio-oracle/biooracler)
+- [tidyr](https://CRAN.R-project.org/package=tidyr)
 
 # Installation
 
     # install.packages(remotes)
-    remotes::install_github("bio-oracle/biooracler")
     remotes::install_github("BigelowLab/biooracle")
 
 # Set up a data directory
 
 You can store the path to your chosen data directory. It will persist
-between R sessions.
+between R sessions so you don’t have to do it each time.
 
 ``` r
 library(biooracle)
@@ -48,19 +43,21 @@ biooracle_path() |> dir(full.names = TRUE)
     ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa" 
     ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"
 
+# Fecth some data to a temporary directory
+
+We’ll set that aside for right now and fetch some data for that region,
+but note that this downloaded as a NetCDF file in a temporary directory.
+
 ``` r
 dataset_id = "thetao_ssp119_2020_2100_depthmin"
 newfile = fetch_biooracle(dataset_id, 
                           bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7))
 ```
 
-``` r
-x = stars::read_stars(newfile)
-```
-
-    ## thetao_ltmax, thetao_ltmin, thetao_max, thetao_mean, thetao_min, thetao_range, thetao_sd,
+Now we can read the file.
 
 ``` r
+x = stars::read_stars(newfile, quiet = TRUE)
 x
 ```
 
@@ -87,3 +84,55 @@ x
     ## x       1 691    -77  0.05      NA                      NULL [x]
     ## y       1 405  56.75 -0.05      NA                      NULL [y]
     ## time    1   8     NA    NA POSIXct 2020-01-01,...,2090-01-01
+
+# Archiving in a local database
+
+We often save the data in a directory structure aong with a simple table
+that catalogs the contents of the directory. The `archive_biooracle()`
+function will split up the fecthed data and save in a logical data
+structure. We provide the data path, in this case for the Northwest
+Atlantic (nwa).
+
+``` r
+archive_biooracle(newfile, path = nwa_path)
+```
+
+    ## # A tibble: 56 × 5
+    ##    scenario year  z        param  trt  
+    ##    <chr>    <chr> <chr>    <chr>  <chr>
+    ##  1 ssp119   2020  depthmin thetao ltmax
+    ##  2 ssp119   2030  depthmin thetao ltmax
+    ##  3 ssp119   2040  depthmin thetao ltmax
+    ##  4 ssp119   2050  depthmin thetao ltmax
+    ##  5 ssp119   2060  depthmin thetao ltmax
+    ##  6 ssp119   2070  depthmin thetao ltmax
+    ##  7 ssp119   2080  depthmin thetao ltmax
+    ##  8 ssp119   2090  depthmin thetao ltmax
+    ##  9 ssp119   2020  depthmin thetao ltmin
+    ## 10 ssp119   2030  depthmin thetao ltmin
+    ## # ℹ 46 more rows
+
+# Read the database catalog
+
+Once you have established a database of files, your can read the
+database catalog.
+
+``` r
+db = read_database(nwa_path) |>
+  print()
+```
+
+    ## # A tibble: 56 × 5
+    ##    scenario year  z        param  trt  
+    ##    <chr>    <chr> <chr>    <chr>  <chr>
+    ##  1 ssp119   2020  depthmin thetao ltmax
+    ##  2 ssp119   2030  depthmin thetao ltmax
+    ##  3 ssp119   2040  depthmin thetao ltmax
+    ##  4 ssp119   2050  depthmin thetao ltmax
+    ##  5 ssp119   2060  depthmin thetao ltmax
+    ##  6 ssp119   2070  depthmin thetao ltmax
+    ##  7 ssp119   2080  depthmin thetao ltmax
+    ##  8 ssp119   2090  depthmin thetao ltmax
+    ##  9 ssp119   2020  depthmin thetao ltmin
+    ## 10 ssp119   2030  depthmin thetao ltmin
+    ## # ℹ 46 more rows

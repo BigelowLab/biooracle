@@ -7,7 +7,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Extra R-language tools to supplement [biooracler R package](https://github.com/bio-oracle/biooracler). This package serves up R scripts to create a local data repository, or to update a local data repository on a regular basis.  
+Extra R-language tools to supplement [biooracler R package](https://github.com/bio-oracle/biooracler). This package serves up R scripts to create a local data repository.
 
 # Requirements for package
 
@@ -20,22 +20,17 @@ From CRAN
   + [dplyr](https://CRAN.R-project.org/package=dplyr)
   + [tidyr](https://CRAN.R-project.org/package=tidyr)
   
-From github
-
-  + [biooracler](https://github.com/bio-oracle/biooracler)
-
 
 # Installation
 
 ```
 # install.packages(remotes)
-remotes::install_github("bio-oracle/biooracler")
 remotes::install_github("BigelowLab/biooracle")
 ```
 
 # Set up a data directory
 
-You can store the path to your chosen data directory. It will persist between R sessions.
+You can store the path to your chosen data directory. It will persist between R sessions so you don't have to do it each time.
 
 ```{r setup_data_dir}
 library(biooracle)
@@ -49,6 +44,9 @@ nwa_path = biooracle_path("nwa") |> make_path()
 biooracle_path() |> dir(full.names = TRUE)
 ```
 
+# Fecth some data to a temporary directory
+
+We'll set that aside for right now and fetch some data for that region, but note that this downloaded as a NetCDF file in a temporary directory.
 
 ```{r download}
 dataset_id = "thetao_ssp119_2020_2100_depthmin"
@@ -56,9 +54,29 @@ newfile = fetch_biooracle(dataset_id,
                           bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7))
 ```
 
+Now we can read the file.
 
 ```{r read}
-x = stars::read_stars(newfile)
+x = stars::read_stars(newfile, quiet = TRUE)
 x
 ```
+
+# Archiving in a local database
+
+We often save the data in a directory structure aong with a simple table that catalogs the contents of the directory.  The `archive_biooracle()` function will split up the fecthed data and save in a logical data structure.  We provide the data path, in this case for the Northwest Atlantic (nwa).
+
+```{r archive}
+archive_biooracle(newfile, path = nwa_path)
+```
+
+
+# Read the database catalog
+
+Once you have established a database of files, your can read the database catalog.
+
+```{r read_database}
+db = read_database(nwa_path) |>
+  print()
+```
+
 
