@@ -105,7 +105,7 @@ fetch_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
   newfile = download_biooracle(dataset_id, constraints = constraints, ...)
   if (archive && !is.null(data_dir)){
     ok = make_path(data_dir)
-    db = archive_biooracle(newfile, path = data_path)
+    db = archive_biooracle(newfile, path = data_dir)
   }
   newfile
 }

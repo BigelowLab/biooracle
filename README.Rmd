@@ -47,15 +47,19 @@ nwa_path = biooracle_path("nwa") |> make_path()
 biooracle_path() |> dir(full.names = TRUE)
 ```
 
-# Fecth some data to a temporary directory
+# Fetch some data to a temporary directory
 
-We'll set that aside for right now and fetch some data for that region, but note that this downloaded as a NetCDF file in a temporary directory.
+We'll set that aside for right now and fetch some data for that region, but note that this downloaded as a NetCDF file in a temporary directory.  Keep in mind that we are specifying the
+bounding box with a vector of the corners, but we can also provide any object from which a bounding box can be determined using the [sf package](https://CRAN.R-project.org/package=sf), such as a polygon, raster or collection of points.
 
-```{r download}
+```{r download, message = FALSE, warning = FALSE}
 dataset_id = "thetao_ssp119_2020_2100_depthmin"
 newfile = fetch_biooracle(dataset_id, 
                           bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7))
 ```
+
+**NOTE** that you can make subselections of variable and times to download.  See `?fetch_biooracle` for the details.
+
 
 Now we can read the file.
 
@@ -72,6 +76,14 @@ We often save the data in a directory structure aong with a simple table that ca
 archive_biooracle(newfile, path = nwa_path)
 ```
 
+Alternatively, it is possible to fetch and archive in one step, and this is likely the most convenient usage.
+
+```{r}
+newfile = fetch_biooracle(dataset_id, 
+                          bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7),
+                          archive = TRUE,
+                          data_dir = nwa_path)
+```
 
 # Read the database catalog
 
@@ -85,7 +97,7 @@ db = read_database(nwa_path) |>
 
 # Read in data from the database
 
-You can use a portion of the database to read in a `stars` object.  Keep in mind that if you are reading multiple over mutlple decades, then each variable must have the same number of time steps.
+You can use a portion of the database to read in a `stars` object.  Keep in mind that if you are reading multiple over multiple decades, then each variable must have the same number of time steps.
 
 ```{r read_biooracle}
 x = db |>
@@ -94,6 +106,9 @@ x = db |>
   read_biooracle(, path = nwa_path) |>
   print()
 ```
+
+And of course you can plot.
+
 ```{r plot_again}
 plot(x['thetao_mean'])
 ```

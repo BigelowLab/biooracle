@@ -46,16 +46,24 @@ biooracle_path() |> dir(full.names = TRUE)
     ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa" 
     ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"
 
-# Fecth some data to a temporary directory
+# Fetch some data to a temporary directory
 
 We’ll set that aside for right now and fetch some data for that region,
 but note that this downloaded as a NetCDF file in a temporary directory.
+Keep in mind that we are specifying the bounding box with a vector of
+the corners, but we can also provide any object from which a bounding
+box can be determined using the [sf
+package](https://CRAN.R-project.org/package=sf), such as a polygon,
+raster or collection of points.
 
 ``` r
 dataset_id = "thetao_ssp119_2020_2100_depthmin"
 newfile = fetch_biooracle(dataset_id, 
                           bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7))
 ```
+
+**NOTE** that you can make subselections of variable and times to
+download. See `?fetch_biooracle` for the details.
 
 Now we can read the file.
 
@@ -115,6 +123,16 @@ archive_biooracle(newfile, path = nwa_path)
     ## 10 ssp119   2030  depthmin thetao max  
     ## # ℹ 46 more rows
 
+Alternatively, it is possible to fetch and archive in one step, and this
+is likely the most convenient usage.
+
+``` r
+newfile = fetch_biooracle(dataset_id, 
+                          bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7),
+                          archive = TRUE,
+                          data_dir = nwa_path)
+```
+
 # Read the database catalog
 
 Once you have established a database of files, your can read the
@@ -143,8 +161,8 @@ db = read_database(nwa_path) |>
 # Read in data from the database
 
 You can use a portion of the database to read in a `stars` object. Keep
-in mind that if you are reading multiple over mutlple decades, then each
-variable must have the same number of time steps.
+in mind that if you are reading multiple over multiple decades, then
+each variable must have the same number of time steps.
 
 ``` r
 x = db |>
@@ -177,6 +195,8 @@ x = db |>
     ## x       1 691    -77  0.05 [x]
     ## y       1 405  56.75 -0.05 [y]
     ## time    1   3   2070    10
+
+And of course you can plot.
 
 ``` r
 plot(x['thetao_mean'])
