@@ -28,6 +28,8 @@ From CRAN
 remotes::install_github("BigelowLab/biooracle")
 ```
 
+
+
 # Set up a data directory
 
 You can store the path to your chosen data directory. It will persist between R sessions so you don't have to do it each time.
@@ -45,6 +47,15 @@ We'll be creating a new local dataset for the Northwest Atlantic (nwa) which has
 ```{r make_nwa}
 nwa_path = biooracle_path("nwa") |> make_path()
 biooracle_path() |> dir(full.names = TRUE)
+```
+
+# List available data layers
+
+[biooracler R package](https://github.com/bio-oracle/biooracler) provides a nice utility for obtaining a list of available data layers.  We have enhanced that by parsing the `dataset_id` so we can quickly filter for the desried dataset(s).  This will only work if [biooracler](https://github.com/bio-oracle/biooracler) is installed.
+
+```{r list_layers}
+list_layers() |>
+  knitr::kable()
 ```
 
 # Fetch some data to a temporary directory

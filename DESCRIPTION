@@ -17,3 +17,5 @@ Imports:
   tidyr,
   dplyr,
   readr
+Suggests:
+  biooracler
