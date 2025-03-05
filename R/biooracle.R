@@ -47,6 +47,10 @@ list_layers = function(){
                                 too_few = "error",
                                 too_many = "error",
                                 cols_remove = FALSE) |>
-    dplyr::bind_rows(oddballs)
+    dplyr::bind_rows(oddballs) |>
+    dplyr::mutate(longname = strsplit(.data$title, " ", fixed = TRUE) |>
+                               sapply(`[[`,2),
+                  .before = 1)
+  
   
 }

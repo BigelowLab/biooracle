@@ -56,24 +56,108 @@ filter for the desried dataset(s). This will only work if
 
 ``` r
 list_layers() |>
-  knitr::kable()
+  kableExtra::kbl(longtable = TRUE)
 ```
 
     ## Loading required namespace: biooracler
 
-| var | scenario | start | stop | z | dataset_id | title | summary |
-|:---|:---|:---|:---|:---|:---|:---|:---|
-| tas | baseline | 2000 | 2020 | depthsurf | tas_baseline_2000_2020_depthsurf | Bio-Oracle AirTemperature \[depthSurf\] Baseline 2000-2020. | Uses attributes recommended by <https://cfconventions.org> |
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+longname
+</th>
+<th style="text-align:left;">
+var
+</th>
+<th style="text-align:left;">
+scenario
+</th>
+<th style="text-align:left;">
+start
+</th>
+<th style="text-align:left;">
+stop
+</th>
+<th style="text-align:left;">
+z
+</th>
+<th style="text-align:left;">
+dataset_id
+</th>
+<th style="text-align:left;">
+title
+</th>
+<th style="text-align:left;">
+summary
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature, K)
 tas_ltmax (Long-term maximum AirTemperature, K) tas_mean (Average
 AirTemperature, K) tas_ltmin (Long-term minimum AirTemperature, K)
 tas_min (Minimum AirTemperature, K) tas_range (Range AirTemperature, K)
-\| \|tas \|ssp119 \|2020 \|2100 \|depthsurf
-\|tas_ssp119_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -81,10 +165,37 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|tas \|ssp126 \|2020 \|2100 \|depthsurf
-\|tas_ssp126_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -92,10 +203,37 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|tas \|ssp245 \|2020 \|2100 \|depthsurf
-\|tas_ssp245_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -103,10 +241,37 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|tas \|ssp370 \|2020 \|2100 \|depthsurf
-\|tas_ssp370_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -114,10 +279,37 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|tas \|ssp460 \|2020 \|2100 \|depthsurf
-\|tas_ssp460_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -125,10 +317,37 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|tas \|ssp585 \|2020 \|2100 \|depthsurf
-\|tas_ssp585_2020_2100_depthsurf \|Bio-Oracle AirTemperature
-\[depthSurf\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AirTemperature
+</td>
+<td style="text-align:left;">
+tas
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+tas_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle AirTemperature \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): tas_max (Maximum AirTemperature,
@@ -136,196 +355,444 @@ degree_C) tas_ltmax (Long-term maximum AirTemperature, degree_C)
 tas_mean (Average AirTemperature, degree_C) tas_ltmin (Long-term minimum
 AirTemperature, degree_C) tas_min (Minimum AirTemperature, degree_C)
 tas_range (Range AirTemperature, degree_C) tas_sd (Standard deviation
-AirTemperature, degree_C) \| \|chl \|baseline \|2000 \|2018 \|depthmax
-\|chl_baseline_2000_2018_depthmax \|Bio-Oracle Chlorophyll \[depthMax\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+AirTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+chl_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) \| \|chl \|baseline \|2000 \|2018 \|depthmean
-\|chl_baseline_2000_2018_depthmean \|Bio-Oracle Chlorophyll
-\[depthMean\] Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+chl_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) \| \|chl \|baseline \|2000 \|2018 \|depthmin
-\|chl_baseline_2000_2018_depthmin \|Bio-Oracle Chlorophyll \[depthMin\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+chl_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) \| \|chl \|baseline \|2000 \|2018 \|depthsurf
-\|chl_baseline_2000_2018_depthsurf \|Bio-Oracle Chlorophyll
-\[depthSurf\] Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) \| \|chl \|ssp119 \|2020 \|2100 \|depthsurf
-\|chl_ssp119_2020_2100_depthsurf \|Bio-Oracle Chlorophyll \[depthSurf\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|chl \|ssp126
-\|2020 \|2100 \|depthsurf \|chl_ssp126_2020_2100_depthsurf \|Bio-Oracle
-Chlorophyll \[depthSurf\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|chl \|ssp245
-\|2020 \|2100 \|depthsurf \|chl_ssp245_2020_2100_depthsurf \|Bio-Oracle
-Chlorophyll \[depthSurf\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|chl \|ssp370
-\|2020 \|2100 \|depthsurf \|chl_ssp370_2020_2100_depthsurf \|Bio-Oracle
-Chlorophyll \[depthSurf\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|chl \|ssp460
-\|2020 \|2100 \|depthsurf \|chl_ssp460_2020_2100_depthsurf \|Bio-Oracle
-Chlorophyll \[depthSurf\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|chl \|ssp585
-\|2020 \|2100 \|depthsurf \|chl_ssp585_2020_2100_depthsurf \|Bio-Oracle
-Chlorophyll \[depthSurf\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chlorophyll
+</td>
+<td style="text-align:left;">
+chl
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+chl_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Chlorophyll \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): chl_max (Maximum Chlorophyll, mg
 m-3) chl_ltmax (Long-term maximum Chlorophyll, mg m-3) chl_mean (Average
 Chlorophyll, mg m-3) chl_ltmin (Long-term minimum Chlorophyll, mg m-3)
 chl_min (Minimum Chlorophyll, mg m-3) chl_range (Range Chlorophyll, mg
-m-3) chl_sd (Standard deviation Chlorophyll, mg m-3) \| \|dfe \|baseline
-\|2000 \|2018 \|depthmax \|dfe_baseline_2000_2018_depthmax \|Bio-Oracle
-DissolvedIron \[depthMax\] Baseline 2000-2018. \|Uses attributes
-recommended by <https://cfconventions.org>
+m-3) chl_sd (Standard deviation Chlorophyll, mg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
 MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp119
-\|2020 \|2100 \|depthmax \|dfe_ssp119_2020_2100_depthmax \|Bio-Oracle
-DissolvedIron \[depthMax\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp126 \|2020 \|2100
-\|depthmax \|dfe_ssp126_2020_2100_depthmax \|Bio-Oracle DissolvedIron
-\[depthMax\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp245 \|2020 \|2100
-\|depthmax \|dfe_ssp245_2020_2100_depthmax \|Bio-Oracle DissolvedIron
-\[depthMax\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp370 \|2020 \|2100
-\|depthmax \|dfe_ssp370_2020_2100_depthmax \|Bio-Oracle DissolvedIron
-\[depthMax\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp460 \|2020 \|2100
-\|depthmax \|dfe_ssp460_2020_2100_depthmax \|Bio-Oracle DissolvedIron
-\[depthMax\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp585 \|2020 \|2100
-\|depthmax \|dfe_ssp585_2020_2100_depthmax \|Bio-Oracle DissolvedIron
-\[depthMax\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|baseline \|2000 \|2018
-\|depthmean \|dfe_baseline_2000_2018_depthmean \|Bio-Oracle
-DissolvedIron \[depthMean\] Baseline 2000-2018. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp119
-\|2020 \|2100 \|depthmean \|dfe_ssp119_2020_2100_depthmean \|Bio-Oracle
-DissolvedIron \[depthMean\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -333,10 +800,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp126 \|2020 \|2100
-\|depthmean \|dfe_ssp126_2020_2100_depthmean \|Bio-Oracle DissolvedIron
-\[depthMean\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -344,10 +838,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp245 \|2020 \|2100
-\|depthmean \|dfe_ssp245_2020_2100_depthmean \|Bio-Oracle DissolvedIron
-\[depthMean\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -355,10 +876,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp370 \|2020 \|2100
-\|depthmean \|dfe_ssp370_2020_2100_depthmean \|Bio-Oracle DissolvedIron
-\[depthMean\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -366,10 +914,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp460 \|2020 \|2100
-\|depthmean \|dfe_ssp460_2020_2100_depthmean \|Bio-Oracle DissolvedIron
-\[depthMean\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -377,10 +952,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp585 \|2020 \|2100
-\|depthmean \|dfe_ssp585_2020_2100_depthmean \|Bio-Oracle DissolvedIron
-\[depthMean\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+dfe_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -388,96 +990,74 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|baseline \|2000 \|2018
-\|depthmin \|dfe_baseline_2000_2018_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
 MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp119
-\|2020 \|2100 \|depthmin \|dfe_ssp119_2020_2100_depthmin \|Bio-Oracle
-DissolvedIron \[depthMin\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp126 \|2020 \|2100
-\|depthmin \|dfe_ssp126_2020_2100_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp245 \|2020 \|2100
-\|depthmin \|dfe_ssp245_2020_2100_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp370 \|2020 \|2100
-\|depthmin \|dfe_ssp370_2020_2100_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp460 \|2020 \|2100
-\|depthmin \|dfe_ssp460_2020_2100_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp585 \|2020 \|2100
-\|depthmin \|dfe_ssp585_2020_2100_depthmin \|Bio-Oracle DissolvedIron
-\[depthMin\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|baseline \|2000 \|2018
-\|depthsurf \|dfe_baseline_2000_2018_depthsurf \|Bio-Oracle
-DissolvedIron \[depthSurf\] Baseline 2000-2018. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
-MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
-dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
-minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
-‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp119
-\|2020 \|2100 \|depthsurf \|dfe_ssp119_2020_2100_depthsurf \|Bio-Oracle
-DissolvedIron \[depthSurf\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -485,10 +1065,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp126 \|2020 \|2100
-\|depthsurf \|dfe_ssp126_2020_2100_depthsurf \|Bio-Oracle DissolvedIron
-\[depthSurf\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -496,10 +1103,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp245 \|2020 \|2100
-\|depthsurf \|dfe_ssp245_2020_2100_depthsurf \|Bio-Oracle DissolvedIron
-\[depthSurf\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -507,10 +1141,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp370 \|2020 \|2100
-\|depthsurf \|dfe_ssp370_2020_2100_depthsurf \|Bio-Oracle DissolvedIron
-\[depthSurf\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -518,10 +1179,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp460 \|2020 \|2100
-\|depthsurf \|dfe_ssp460_2020_2100_depthsurf \|Bio-Oracle DissolvedIron
-\[depthSurf\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -529,10 +1217,37 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|dfe \|ssp585 \|2020 \|2100
-\|depthsurf \|dfe_ssp585_2020_2100_depthsurf \|Bio-Oracle DissolvedIron
-\[depthSurf\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+dfe_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
@@ -540,10 +1255,567 @@ MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
 dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
 minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
 ‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
-deviation DissolvedIron, MMol’ ’M-3) \| \|o2 \|baseline \|2000 \|2018
-\|depthmax \|o2_baseline_2000_2018_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] Baseline 2000-2018. \|Uses
-attributes recommended by <https://cfconventions.org>
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+dfe_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedIron
+</td>
+<td style="text-align:left;">
+dfe
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+dfe_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedIron \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): dfe_max (Maximum DissolvedIron,
+MMol’ ‘M-3) dfe_ltmax (Long-term maximum DissolvedIron, MMol’ ‘M-3)
+dfe_mean (Average DissolvedIron, MMol’ ‘M-3) dfe_ltmin (Long-term
+minimum DissolvedIron, MMol’ ‘M-3) dfe_min (Minimum DissolvedIron, MMol’
+‘M-3) dfe_range (Range DissolvedIron, MMol’ ‘M-3) dfe_sd (Standard
+deviation DissolvedIron, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -552,10 +1824,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp119 \|2020 \|2100
-\|depthmax \|o2_ssp119_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP119 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -565,10 +1864,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp126 \|2020 \|2100
-\|depthmax \|o2_ssp126_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP126 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -578,10 +1904,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp245 \|2020 \|2100
-\|depthmax \|o2_ssp245_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP245 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -591,10 +1944,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp370 \|2020 \|2100
-\|depthmax \|o2_ssp370_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP370 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -604,10 +1984,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp460 \|2020 \|2100
-\|depthmax \|o2_ssp460_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP460 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -617,10 +2024,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp585 \|2020 \|2100
-\|depthmax \|o2_ssp585_2020_2100_depthmax \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMax\] SSP585 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+o2_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -630,10 +2064,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|baseline \|2000 \|2018
-\|depthmean \|o2_baseline_2000_2018_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] Baseline 2000-2018. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -642,75 +2103,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp119 \|2020 \|2100
-\|depthmean \|o2_ssp119_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP119 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp126 \|2020 \|2100
-\|depthmean \|o2_ssp126_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP126 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp245 \|2020 \|2100
-\|depthmean \|o2_ssp245_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP245 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp370 \|2020 \|2100
-\|depthmean \|o2_ssp370_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP370 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp460 \|2020 \|2100
-\|depthmean \|o2_ssp460_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP460 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp585 \|2020 \|2100
-\|depthmean \|o2_ssp585_2020_2100_depthmean \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMean\] SSP585 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -720,48 +2143,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|baseline \|2000 \|2018
-\|depthmin \|o2_baseline_2000_2018_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] Baseline 2000-2018. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp119 \|2020 \|2100
-\|depthmin \|o2_ssp119_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP119 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp126 \|2020 \|2100
-\|depthmin \|o2_ssp126_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP126 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp245 \|2020 \|2100
-\|depthmin \|o2_ssp245_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP245 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -771,10 +2183,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp370 \|2020 \|2100
-\|depthmin \|o2_ssp370_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP370 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -784,10 +2223,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp460 \|2020 \|2100
-\|depthmin \|o2_ssp460_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP460 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -797,10 +2263,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp585 \|2020 \|2100
-\|depthmin \|o2_ssp585_2020_2100_depthmin \|Bio-Oracle
-DissolvedMolecularOxygen \[depthMin\] SSP585 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -810,48 +2303,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|baseline \|2000 \|2018
-\|depthsurf \|o2_baseline_2000_2018_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] Baseline 2000-2018. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+o2_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp119 \|2020 \|2100
-\|depthsurf \|o2_ssp119_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP119 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp126 \|2020 \|2100
-\|depthsurf \|o2_ssp126_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP126 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
-DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp245 \|2020 \|2100
-\|depthsurf \|o2_ssp245_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP245 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -861,10 +2343,76 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp370 \|2020 \|2100
-\|depthsurf \|o2_ssp370_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP370 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -874,10 +2422,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp460 \|2020 \|2100
-\|depthsurf \|o2_ssp460_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP460 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -887,10 +2462,37 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|o2 \|ssp585 \|2020 \|2100
-\|depthsurf \|o2_ssp585_2020_2100_depthsurf \|Bio-Oracle
-DissolvedMolecularOxygen \[depthSurf\] SSP585 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): o2_max (Maximum
@@ -900,20 +2502,473 @@ DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
 DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
-DissolvedMolecularOxygen, MMol’ ’M-3) \| \|mlotst \|baseline \|2000
-\|2019 \|depthsurf \|mlotst_baseline_2000_2019_depthsurf \|Bio-Oracle
-MixedLayerDepth \[depthSurf\] Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+o2_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DissolvedMolecularOxygen
+</td>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+o2_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DissolvedMolecularOxygen \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): o2_max (Maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmax (Long-term maximum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_mean (Average
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_ltmin (Long-term minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_min (Minimum
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_range (Range
+DissolvedMolecularOxygen, MMol’ ‘M-3) o2_sd (Standard deviation
+DissolvedMolecularOxygen, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_baseline_2000_2019_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
 m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
-(Range MixedLayerDepth, m) \| \|mlotst \|ssp119 \|2020 \|2100
-\|depthsurf \|mlotst_ssp119_2020_2100_depthsurf \|Bio-Oracle
-MixedLayerDepth \[depthSurf\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Range MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -921,10 +2976,37 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|mlotst \|ssp126 \|2020 \|2100 \|depthsurf
-\|mlotst_ssp126_2020_2100_depthsurf \|Bio-Oracle MixedLayerDepth
-\[depthSurf\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -932,10 +3014,37 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|mlotst \|ssp245 \|2020 \|2100 \|depthsurf
-\|mlotst_ssp245_2020_2100_depthsurf \|Bio-Oracle MixedLayerDepth
-\[depthSurf\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -943,10 +3052,37 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|mlotst \|ssp370 \|2020 \|2100 \|depthsurf
-\|mlotst_ssp370_2020_2100_depthsurf \|Bio-Oracle MixedLayerDepth
-\[depthSurf\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -954,10 +3090,37 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|mlotst \|ssp460 \|2020 \|2100 \|depthsurf
-\|mlotst_ssp460_2020_2100_depthsurf \|Bio-Oracle MixedLayerDepth
-\[depthSurf\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -965,10 +3128,37 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|mlotst \|ssp585 \|2020 \|2100 \|depthsurf
-\|mlotst_ssp585_2020_2100_depthsurf \|Bio-Oracle MixedLayerDepth
-\[depthSurf\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MixedLayerDepth
+</td>
+<td style="text-align:left;">
+mlotst
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+mlotst_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle MixedLayerDepth \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): mlotst_max (Maximum MixedLayerDepth,
@@ -976,302 +3166,1073 @@ m) mlotst_ltmax (Long-term maximum MixedLayerDepth, m) mlotst_mean
 (Average MixedLayerDepth, m) mlotst_ltmin (Long-term minimum
 MixedLayerDepth, m) mlotst_min (Minimum MixedLayerDepth, m) mlotst_range
 (Range MixedLayerDepth, m) mlotst_sd (Standard deviation
-MixedLayerDepth, m) \| \|no3 \|baseline \|2000 \|2018 \|depthmax
-\|no3_baseline_2000_2018_depthmax \|Bio-Oracle Nitrate \[depthMax\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+MixedLayerDepth, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ’M-3) \| \|no3 \|ssp119 \|2020 \|2100 \|depthmax
-\|no3_ssp119_2020_2100_depthmax \|Bio-Oracle Nitrate \[depthMax\] SSP119
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp126 \|2020 \|2100 \|depthmax \|no3_ssp126_2020_2100_depthmax
-\|Bio-Oracle Nitrate \[depthMax\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp245 \|2020 \|2100 \|depthmax \|no3_ssp245_2020_2100_depthmax
-\|Bio-Oracle Nitrate \[depthMax\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp370 \|2020 \|2100 \|depthmax \|no3_ssp370_2020_2100_depthmax
-\|Bio-Oracle Nitrate \[depthMax\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp460 \|2020 \|2100 \|depthmax \|no3_ssp460_2020_2100_depthmax
-\|Bio-Oracle Nitrate \[depthMax\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp585 \|2020 \|2100 \|depthmax \|no3_ssp585_2020_2100_depthmax
-\|Bio-Oracle Nitrate \[depthMax\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+no3_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|baseline \|2000 \|2018 \|depthmean
-\|no3_baseline_2000_2018_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ’M-3) \| \|no3 \|ssp119 \|2020 \|2100 \|depthmean
-\|no3_ssp119_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp126 \|2020 \|2100 \|depthmean
-\|no3_ssp126_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp245 \|2020 \|2100 \|depthmean
-\|no3_ssp245_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp370 \|2020 \|2100 \|depthmean
-\|no3_ssp370_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp460 \|2020 \|2100 \|depthmean
-\|no3_ssp460_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp585 \|2020 \|2100 \|depthmean
-\|no3_ssp585_2020_2100_depthmean \|Bio-Oracle Nitrate \[depthMean\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+no3_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|baseline \|2000 \|2018 \|depthmin
-\|no3_baseline_2000_2018_depthmin \|Bio-Oracle Nitrate \[depthMin\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ’M-3) \| \|no3 \|ssp119 \|2020 \|2100 \|depthmin
-\|no3_ssp119_2020_2100_depthmin \|Bio-Oracle Nitrate \[depthMin\] SSP119
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp126 \|2020 \|2100 \|depthmin \|no3_ssp126_2020_2100_depthmin
-\|Bio-Oracle Nitrate \[depthMin\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp245 \|2020 \|2100 \|depthmin \|no3_ssp245_2020_2100_depthmin
-\|Bio-Oracle Nitrate \[depthMin\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp370 \|2020 \|2100 \|depthmin \|no3_ssp370_2020_2100_depthmin
-\|Bio-Oracle Nitrate \[depthMin\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp460 \|2020 \|2100 \|depthmin \|no3_ssp460_2020_2100_depthmin
-\|Bio-Oracle Nitrate \[depthMin\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp585 \|2020 \|2100 \|depthmin \|no3_ssp585_2020_2100_depthmin
-\|Bio-Oracle Nitrate \[depthMin\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+no3_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|baseline \|2000 \|2018 \|depthsurf
-\|no3_baseline_2000_2018_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ’M-3) \| \|no3 \|ssp119 \|2020 \|2100 \|depthsurf
-\|no3_ssp119_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp126 \|2020 \|2100 \|depthsurf
-\|no3_ssp126_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp245 \|2020 \|2100 \|depthsurf
-\|no3_ssp245_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp370 \|2020 \|2100 \|depthsurf
-\|no3_ssp370_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp460 \|2020 \|2100 \|depthsurf
-\|no3_ssp460_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|no3 \|ssp585 \|2020 \|2100 \|depthsurf
-\|no3_ssp585_2020_2100_depthsurf \|Bio-Oracle Nitrate \[depthSurf\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nitrate
+</td>
+<td style="text-align:left;">
+no3
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+no3_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Nitrate \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): no3_max (Maximum Nitrate, MMol’
 ‘M-3) no3_ltmax (Long-term maximum Nitrate, MMol’ ‘M-3) no3_mean
 (Average Nitrate, MMol’ ‘M-3) no3_ltmin (Long-term minimum Nitrate,
 MMol’ ‘M-3) no3_min (Minimum Nitrate, MMol’ ‘M-3) no3_range (Range
-Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3) \|
-\|thetao \|baseline \|2000 \|2019 \|depthmax
-\|thetao_baseline_2000_2019_depthmax \|Bio-Oracle OceanTemperature
-\[depthMax\] Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
+Nitrate, MMol’ ‘M-3) no3_sd (Standard deviation Nitrate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_baseline_2000_2019_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1279,10 +4240,37 @@ OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
 OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) \| \|thetao \|ssp119 \|2020 \|2100
-\|depthmax \|thetao_ssp119_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1291,10 +4279,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp126 \|2020 \|2100
-\|depthmax \|thetao_ssp126_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1303,10 +4318,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp245 \|2020 \|2100
-\|depthmax \|thetao_ssp245_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1315,10 +4357,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp370 \|2020 \|2100
-\|depthmax \|thetao_ssp370_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1327,10 +4396,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp460 \|2020 \|2100
-\|depthmax \|thetao_ssp460_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1339,10 +4435,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp585 \|2020 \|2100
-\|depthmax \|thetao_ssp585_2020_2100_depthmax \|Bio-Oracle
-OceanTemperature \[depthMax\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+thetao_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1351,10 +4474,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|baseline \|2000 \|2019
-\|depthmean \|thetao_baseline_2000_2019_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_baseline_2000_2019_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1362,70 +4512,37 @@ OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
 OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) \| \|thetao \|ssp119 \|2020 \|2100
-\|depthmean \|thetao_ssp119_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp126 \|2020 \|2100
-\|depthmean \|thetao_ssp126_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp245 \|2020 \|2100
-\|depthmean \|thetao_ssp245_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp370 \|2020 \|2100
-\|depthmean \|thetao_ssp370_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp460 \|2020 \|2100
-\|depthmean \|thetao_ssp460_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp585 \|2020 \|2100
-\|depthmean \|thetao_ssp585_2020_2100_depthmean \|Bio-Oracle
-OceanTemperature \[depthMean\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1434,45 +4551,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|baseline \|2000 \|2019
-\|depthmin \|thetao_baseline_2000_2019_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) \| \|thetao \|ssp119 \|2020 \|2100
-\|depthmin \|thetao_ssp119_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp126 \|2020 \|2100
-\|depthmin \|thetao_ssp126_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp245 \|2020 \|2100
-\|depthmin \|thetao_ssp245_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1481,10 +4590,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp370 \|2020 \|2100
-\|depthmin \|thetao_ssp370_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1493,10 +4629,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp460 \|2020 \|2100
-\|depthmin \|thetao_ssp460_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1505,10 +4668,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp585 \|2020 \|2100
-\|depthmin \|thetao_ssp585_2020_2100_depthmin \|Bio-Oracle
-OceanTemperature \[depthMin\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1517,45 +4707,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|baseline \|2000 \|2019
-\|depthsurf \|thetao_baseline_2000_2019_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+thetao_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) \| \|thetao \|ssp119 \|2020 \|2100
-\|depthsurf \|thetao_ssp119_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp126 \|2020 \|2100
-\|depthsurf \|thetao_ssp126_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
-OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
-OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
-degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
-thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
-OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp245 \|2020 \|2100
-\|depthsurf \|thetao_ssp245_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1564,10 +4746,75 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp370 \|2020 \|2100
-\|depthsurf \|thetao_ssp370_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_baseline_2000_2019_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1576,10 +4823,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp460 \|2020 \|2100
-\|depthsurf \|thetao_ssp460_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1588,10 +4862,37 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|thetao \|ssp585 \|2020 \|2100
-\|depthsurf \|thetao_ssp585_2020_2100_depthsurf \|Bio-Oracle
-OceanTemperature \[depthSurf\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
@@ -1600,244 +4901,1467 @@ OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
 degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
 thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
 OceanTemperature, degree_C) thetao_sd (Standard deviation
-OceanTemperature, degree_C) \| \|ph \|baseline \|2000 \|2018 \|depthmax
-\|ph_baseline_2000_2018_depthmax \|Bio-Oracle pH \[depthMax\] Baseline
-2000-2018. \|Uses attributes recommended by <https://cfconventions.org>
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+thetao_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_baseline_2000_2019_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OceanTemperature
+</td>
+<td style="text-align:left;">
+thetao
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+thetao_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle OceanTemperature \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): thetao_max (Maximum
+OceanTemperature, degree_C) thetao_ltmax (Long-term maximum
+OceanTemperature, degree_C) thetao_mean (Average OceanTemperature,
+degree_C) thetao_ltmin (Long-term minimum OceanTemperature, degree_C)
+thetao_min (Minimum OceanTemperature, degree_C) thetao_range (Range
+OceanTemperature, degree_C) thetao_sd (Standard deviation
+OceanTemperature, degree_C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) \| \|ph \|ssp119
-\|2020 \|2100 \|depthmax \|ph_ssp119_2020_2100_depthmax \|Bio-Oracle pH
-\[depthMax\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp126 \|2020 \|2100 \|depthmax
-\|ph_ssp126_2020_2100_depthmax \|Bio-Oracle pH \[depthMax\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp245 \|2020 \|2100 \|depthmax
-\|ph_ssp245_2020_2100_depthmax \|Bio-Oracle pH \[depthMax\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp370 \|2020 \|2100 \|depthmax
-\|ph_ssp370_2020_2100_depthmax \|Bio-Oracle pH \[depthMax\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp460 \|2020 \|2100 \|depthmax
-\|ph_ssp460_2020_2100_depthmax \|Bio-Oracle pH \[depthMax\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp585 \|2020 \|2100 \|depthmax
-\|ph_ssp585_2020_2100_depthmax \|Bio-Oracle pH \[depthMax\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+ph_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|baseline \|2000 \|2018 \|depthmean
-\|ph_baseline_2000_2018_depthmean \|Bio-Oracle pH \[depthMean\] Baseline
-2000-2018. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) \| \|ph \|ssp119
-\|2020 \|2100 \|depthmean \|ph_ssp119_2020_2100_depthmean \|Bio-Oracle
-pH \[depthMean\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp126 \|2020 \|2100 \|depthmean
-\|ph_ssp126_2020_2100_depthmean \|Bio-Oracle pH \[depthMean\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp245 \|2020 \|2100 \|depthmean
-\|ph_ssp245_2020_2100_depthmean \|Bio-Oracle pH \[depthMean\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp370 \|2020 \|2100 \|depthmean
-\|ph_ssp370_2020_2100_depthmean \|Bio-Oracle pH \[depthMean\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp460 \|2020 \|2100 \|depthmean
-\|ph_ssp460_2020_2100_depthmean \|Bio-Oracle pH \[depthMean\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp585 \|2020 \|2100 \|depthmean
-\|ph_ssp585_2020_2100_depthmean \|Bio-Oracle pH \[depthMean\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|baseline \|2000 \|2018 \|depthmin
-\|ph_baseline_2000_2018_depthmin \|Bio-Oracle pH \[depthMin\] Baseline
-2000-2018. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) \| \|ph \|ssp119
-\|2020 \|2100 \|depthmin \|ph_ssp119_2020_2100_depthmin \|Bio-Oracle pH
-\[depthMin\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp126 \|2020 \|2100 \|depthmin
-\|ph_ssp126_2020_2100_depthmin \|Bio-Oracle pH \[depthMin\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp245 \|2020 \|2100 \|depthmin
-\|ph_ssp245_2020_2100_depthmin \|Bio-Oracle pH \[depthMin\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp370 \|2020 \|2100 \|depthmin
-\|ph_ssp370_2020_2100_depthmin \|Bio-Oracle pH \[depthMin\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp460 \|2020 \|2100 \|depthmin
-\|ph_ssp460_2020_2100_depthmin \|Bio-Oracle pH \[depthMin\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp585 \|2020 \|2100 \|depthmin
-\|ph_ssp585_2020_2100_depthmin \|Bio-Oracle pH \[depthMin\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|baseline \|2000 \|2018 \|depthsurf
-\|ph_baseline_2000_2018_depthsurf \|Bio-Oracle pH \[depthSurf\] Baseline
-2000-2018. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+ph_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) \| \|ph \|ssp119
-\|2020 \|2100 \|depthsurf \|ph_ssp119_2020_2100_depthsurf \|Bio-Oracle
-pH \[depthSurf\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp126 \|2020 \|2100 \|depthsurf
-\|ph_ssp126_2020_2100_depthsurf \|Bio-Oracle pH \[depthSurf\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp245 \|2020 \|2100 \|depthsurf
-\|ph_ssp245_2020_2100_depthsurf \|Bio-Oracle pH \[depthSurf\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp370 \|2020 \|2100 \|depthsurf
-\|ph_ssp370_2020_2100_depthsurf \|Bio-Oracle pH \[depthSurf\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
-(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
-minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp460 \|2020 \|2100 \|depthsurf
-\|ph_ssp460_2020_2100_depthsurf \|Bio-Oracle pH \[depthSurf\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|ph \|ssp585 \|2020 \|2100 \|depthsurf
-\|ph_ssp585_2020_2100_depthsurf \|Bio-Oracle pH \[depthSurf\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
 (Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
 minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
-deviation pH, 1) \| \|po4 \|baseline \|2000 \|2018 \|depthmax
-\|po4_baseline_2000_2018_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+ph_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pH
+</td>
+<td style="text-align:left;">
+ph
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+ph_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle pH \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): ph_max (Maximum pH, 1) ph_ltmax
+(Long-term maximum pH, 1) ph_mean (Average pH, 1) ph_ltmin (Long-term
+minimum pH, 1) ph_min (Minimum pH, 1) ph_range (1) ph_sd (Standard
+deviation pH, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
 ‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ’M-3) \| \|po4 \|ssp119 \|2020 \|2100 \|depthmax
-\|po4_ssp119_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1845,10 +6369,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp126 \|2020 \|2100 \|depthmax
-\|po4_ssp126_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1856,10 +6406,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp245 \|2020 \|2100 \|depthmax
-\|po4_ssp245_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1867,10 +6443,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp370 \|2020 \|2100 \|depthmax
-\|po4_ssp370_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1878,10 +6480,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp460 \|2020 \|2100 \|depthmax
-\|po4_ssp460_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1889,10 +6517,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp585 \|2020 \|2100 \|depthmax
-\|po4_ssp585_2020_2100_depthmax \|Bio-Oracle Phosphate \[depthMax\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+po4_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1900,96 +6554,73 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|baseline \|2000 \|2018 \|depthmean
-\|po4_baseline_2000_2018_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
 ‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ’M-3) \| \|po4 \|ssp119 \|2020 \|2100 \|depthmean
-\|po4_ssp119_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp126 \|2020 \|2100 \|depthmean
-\|po4_ssp126_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp245 \|2020 \|2100 \|depthmean
-\|po4_ssp245_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp370 \|2020 \|2100 \|depthmean
-\|po4_ssp370_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp460 \|2020 \|2100 \|depthmean
-\|po4_ssp460_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp585 \|2020 \|2100 \|depthmean
-\|po4_ssp585_2020_2100_depthmean \|Bio-Oracle Phosphate \[depthMean\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|baseline \|2000 \|2018 \|depthmin
-\|po4_baseline_2000_2018_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
-‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
-(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
-MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ’M-3) \| \|po4 \|ssp119 \|2020 \|2100 \|depthmin
-\|po4_ssp119_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -1997,10 +6628,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp126 \|2020 \|2100 \|depthmin
-\|po4_ssp126_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2008,10 +6665,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp245 \|2020 \|2100 \|depthmin
-\|po4_ssp245_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2019,10 +6702,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp370 \|2020 \|2100 \|depthmin
-\|po4_ssp370_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2030,10 +6739,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp460 \|2020 \|2100 \|depthmin
-\|po4_ssp460_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2041,10 +6776,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp585 \|2020 \|2100 \|depthmin
-\|po4_ssp585_2020_2100_depthmin \|Bio-Oracle Phosphate \[depthMin\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+po4_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2052,20 +6813,73 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|baseline \|2000 \|2018 \|depthsurf
-\|po4_baseline_2000_2018_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
 ‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
-Phosphate, MMol’ ’M-3) \| \|po4 \|ssp119 \|2020 \|2100 \|depthsurf
-\|po4_ssp119_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2073,10 +6887,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp126 \|2020 \|2100 \|depthsurf
-\|po4_ssp126_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2084,10 +6924,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp245 \|2020 \|2100 \|depthsurf
-\|po4_ssp245_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2095,10 +6961,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp370 \|2020 \|2100 \|depthsurf
-\|po4_ssp370_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2106,10 +6998,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp460 \|2020 \|2100 \|depthsurf
-\|po4_ssp460_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2117,10 +7035,36 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|po4 \|ssp585 \|2020 \|2100 \|depthsurf
-\|po4_ssp585_2020_2100_depthsurf \|Bio-Oracle Phosphate \[depthSurf\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+po4_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
@@ -2128,10 +7072,295 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 (Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
 MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
 Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
-\| \|phyc \|ssp126 \|2020 \|2100 \|depthmax
-\|phyc_ssp126_2020_2100_depthmax \|Bio-Oracle Phytoplankton \[depthMax\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phosphate
+</td>
+<td style="text-align:left;">
+po4
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+po4_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phosphate \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): po4_max (Maximum Phosphate, MMol’
+‘M-3) po4_ltmax (Long-term maximum Phosphate, MMol’ ‘M-3) po4_mean
+(Average Phosphate, MMol’ ‘M-3) po4_ltmin (Long-term minimum Phosphate,
+MMol’ ‘M-3) po4_min (Minimum Phosphate, MMol’ ‘M-3) po4_range (Range
+Phosphate, MMol’ ‘M-3) po4_sd (Standard deviation Phosphate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phytoplankton \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum Phytoplankton,
@@ -2139,10 +7368,37 @@ MMol’ ‘M-3) phyc_ltmax (Long-term maximum Phytoplankton, MMol’ ‘M-3)
 phyc_mean (Average Phytoplankton, MMol’ ‘M-3) phyc_ltmin (Long-term
 minimum Phytoplankton, MMol’ ‘M-3) phyc_min (Minimum Phytoplankton,
 MMol’ ‘M-3) phyc_range (Range Phytoplankton, MMol’ ‘M-3) phyc_sd
-(Standard deviation Phytoplankton, MMol’ ’M-3) \| \|phyc \|ssp126 \|2020
-\|2100 \|depthmean \|phyc_ssp126_2020_2100_depthmean \|Bio-Oracle
-Phytoplankton \[depthMean\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation Phytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phytoplankton \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum Phytoplankton,
@@ -2150,10 +7406,37 @@ MMol’ ‘M-3) phyc_ltmax (Long-term maximum Phytoplankton, MMol’ ‘M-3)
 phyc_mean (Average Phytoplankton, MMol’ ‘M-3) phyc_ltmin (Long-term
 minimum Phytoplankton, MMol’ ‘M-3) phyc_min (Minimum Phytoplankton,
 MMol’ ‘M-3) phyc_range (Range Phytoplankton, MMol’ ‘M-3) phyc_sd
-(Standard deviation Phytoplankton, MMol’ ’M-3) \| \|phyc \|ssp126 \|2020
-\|2100 \|depthmin \|phyc_ssp126_2020_2100_depthmin \|Bio-Oracle
-Phytoplankton \[depthMin\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation Phytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phytoplankton \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum Phytoplankton,
@@ -2161,10 +7444,37 @@ MMol’ ‘M-3) phyc_ltmax (Long-term maximum Phytoplankton, MMol’ ‘M-3)
 phyc_mean (Average Phytoplankton, MMol’ ‘M-3) phyc_ltmin (Long-term
 minimum Phytoplankton, MMol’ ‘M-3) phyc_min (Minimum Phytoplankton,
 MMol’ ‘M-3) phyc_range (Range Phytoplankton, MMol’ ‘M-3) phyc_sd
-(Standard deviation Phytoplankton, MMol’ ’M-3) \| \|phyc \|ssp126 \|2020
-\|2100 \|depthsurf \|phyc_ssp126_2020_2100_depthsurf \|Bio-Oracle
-Phytoplankton \[depthSurf\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation Phytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Phytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Phytoplankton \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum Phytoplankton,
@@ -2172,356 +7482,1364 @@ MMol’ ‘M-3) phyc_ltmax (Long-term maximum Phytoplankton, MMol’ ‘M-3)
 phyc_mean (Average Phytoplankton, MMol’ ‘M-3) phyc_ltmin (Long-term
 minimum Phytoplankton, MMol’ ‘M-3) phyc_min (Minimum Phytoplankton,
 MMol’ ‘M-3) phyc_range (Range Phytoplankton, MMol’ ‘M-3) phyc_sd
-(Standard deviation Phytoplankton, MMol’ ’M-3) \| \|so \|baseline \|2000
-\|2019 \|depthmax \|so_baseline_2000_2019_depthmax \|Bio-Oracle Salinity
-\[depthMax\] Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
+(Standard deviation Phytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_baseline_2000_2019_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) \| \|so \|ssp119 \|2020
-\|2100 \|depthmax \|so_ssp119_2020_2100_depthmax \|Bio-Oracle Salinity
-\[depthMax\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, PSU) so_range (Range Salinity, PSU)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp126 \|2020 \|2100 \|depthmax
-\|so_ssp126_2020_2100_depthmax \|Bio-Oracle Salinity \[depthMax\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp245 \|2020 \|2100 \|depthmax
-\|so_ssp245_2020_2100_depthmax \|Bio-Oracle Salinity \[depthMax\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp370 \|2020 \|2100 \|depthmax
-\|so_ssp370_2020_2100_depthmax \|Bio-Oracle Salinity \[depthMax\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp460 \|2020 \|2100 \|depthmax
-\|so_ssp460_2020_2100_depthmax \|Bio-Oracle Salinity \[depthMax\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp585 \|2020 \|2100 \|depthmax
-\|so_ssp585_2020_2100_depthmax \|Bio-Oracle Salinity \[depthMax\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|baseline \|2000 \|2019 \|depthmean
-\|so_baseline_2000_2019_depthmean \|Bio-Oracle Salinity \[depthMean\]
-Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) \| \|so \|ssp119 \|2020
-\|2100 \|depthmean \|so_ssp119_2020_2100_depthmean \|Bio-Oracle Salinity
-\[depthMean\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp126 \|2020 \|2100 \|depthmean
-\|so_ssp126_2020_2100_depthmean \|Bio-Oracle Salinity \[depthMean\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp245 \|2020 \|2100 \|depthmean
-\|so_ssp245_2020_2100_depthmean \|Bio-Oracle Salinity \[depthMean\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp370 \|2020 \|2100 \|depthmean
-\|so_ssp370_2020_2100_depthmean \|Bio-Oracle Salinity \[depthMean\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp460 \|2020 \|2100 \|depthmean
-\|so_ssp460_2020_2100_depthmean \|Bio-Oracle Salinity \[depthMean\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp585 \|2020 \|2100 \|depthmean
-\|so_ssp585_2020_2100_depthmean \|Bio-Oracle Salinity \[depthMean\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+so_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|baseline \|2000 \|2019 \|depthmin
-\|so_baseline_2000_2019_depthmin \|Bio-Oracle Salinity \[depthMin\]
-Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_baseline_2000_2019_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) \| \|so \|ssp119 \|2020
-\|2100 \|depthmin \|so_ssp119_2020_2100_depthmin \|Bio-Oracle Salinity
-\[depthMin\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, PSU) so_range (Range Salinity, PSU)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp126 \|2020 \|2100 \|depthmin
-\|so_ssp126_2020_2100_depthmin \|Bio-Oracle Salinity \[depthMin\] SSP126
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp245 \|2020 \|2100 \|depthmin
-\|so_ssp245_2020_2100_depthmin \|Bio-Oracle Salinity \[depthMin\] SSP245
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp370 \|2020 \|2100 \|depthmin
-\|so_ssp370_2020_2100_depthmin \|Bio-Oracle Salinity \[depthMin\] SSP370
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp460 \|2020 \|2100 \|depthmin
-\|so_ssp460_2020_2100_depthmin \|Bio-Oracle Salinity \[depthMin\] SSP460
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp585 \|2020 \|2100 \|depthmin
-\|so_ssp585_2020_2100_depthmin \|Bio-Oracle Salinity \[depthMin\] SSP585
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|baseline \|2000 \|2019 \|depthsurf
-\|so_baseline_2000_2019_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
-so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
-PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
-Salinity, PSU) so_range (Range Salinity, PSU) \| \|so \|ssp119 \|2020
-\|2100 \|depthsurf \|so_ssp119_2020_2100_depthsurf \|Bio-Oracle Salinity
-\[depthSurf\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp126 \|2020 \|2100 \|depthsurf
-\|so_ssp126_2020_2100_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp245 \|2020 \|2100 \|depthsurf
-\|so_ssp245_2020_2100_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp370 \|2020 \|2100 \|depthsurf
-\|so_ssp370_2020_2100_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp460 \|2020 \|2100 \|depthsurf
-\|so_ssp460_2020_2100_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|so \|ssp585 \|2020 \|2100 \|depthsurf
-\|so_ssp585_2020_2100_depthsurf \|Bio-Oracle Salinity \[depthSurf\]
-SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+so_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
 so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
 PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
 Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
-Salinity, 1e-3) \| \|siconc \|baseline \|2000 \|2020 \|depthsurf
-\|siconc_baseline_2000_2020_depthsurf \|Bio-Oracle SeaIceCover
-\[depthSurf\] Baseline 2000-2020. \|Uses attributes recommended by
-<https://cfconventions.org>
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_baseline_2000_2019_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+so_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_baseline_2000_2019_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salinity
+</td>
+<td style="text-align:left;">
+so
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+so_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Salinity \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): so_max (Maximum Salinity, PSU)
+so_ltmax (Long-term maximum Salinity, PSU) so_mean (Average Salinity,
+PSU) so_ltmin (Long-term minimum Salinity, PSU) so_min (Minimum
+Salinity, PSU) so_range (Range Salinity, PSU) so_sd (Standard deviation
+Salinity, 1e-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-\| \|siconc \|ssp119 \|2020 \|2100 \|depthsurf
-\|siconc_ssp119_2020_2100_depthsurf \|Bio-Oracle SeaIceCover
-\[depthSurf\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|siconc \|ssp126
-\|2020 \|2100 \|depthsurf \|siconc_ssp126_2020_2100_depthsurf
-\|Bio-Oracle SeaIceCover \[depthSurf\] SSP126 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|siconc \|ssp245
-\|2020 \|2100 \|depthsurf \|siconc_ssp245_2020_2100_depthsurf
-\|Bio-Oracle SeaIceCover \[depthSurf\] SSP245 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|siconc \|ssp370
-\|2020 \|2100 \|depthsurf \|siconc_ssp370_2020_2100_depthsurf
-\|Bio-Oracle SeaIceCover \[depthSurf\] SSP370 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|siconc \|ssp460
-\|2020 \|2100 \|depthsurf \|siconc_ssp460_2020_2100_depthsurf
-\|Bio-Oracle SeaIceCover \[depthSurf\] SSP460 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|siconc \|ssp585
-\|2020 \|2100 \|depthsurf \|siconc_ssp585_2020_2100_depthsurf
-\|Bio-Oracle SeaIceCover \[depthSurf\] SSP585 2020-2100. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceCover
+</td>
+<td style="text-align:left;">
+siconc
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+siconc_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceCover \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): siconc_max (Maximum SeaIceCover, 1)
 siconc_ltmax (Long-term maximum SeaIceCover, 1) siconc_mean (Average
 SeaIceCover, 1) siconc_ltmin (Long-term minimum SeaIceCover, 1)
 siconc_min (Minimum SeaIceCover, 1) siconc_range (Range SeaIceCover, 1)
-siconc_sd (Standard deviation SeaIceCover, 1) \| \|sithick \|baseline
-\|2000 \|2020 \|depthsurf \|sithick_baseline_2000_2020_depthsurf
-\|Bio-Oracle SeaIceThickness \[depthSurf\] Baseline 2000-2020. \|Uses
-attributes recommended by <https://cfconventions.org>
+siconc_sd (Standard deviation SeaIceCover, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
 SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
-sithick_range (Range SeaIceThickness, m) \| \|sithick \|ssp119 \|2020
-\|2100 \|depthsurf \|sithick_ssp119_2020_2100_depthsurf \|Bio-Oracle
-SeaIceThickness \[depthSurf\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+sithick_range (Range SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2529,10 +8847,37 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|sithick \|ssp126 \|2020 \|2100 \|depthsurf
-\|sithick_ssp126_2020_2100_depthsurf \|Bio-Oracle SeaIceThickness
-\[depthSurf\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2540,10 +8885,37 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|sithick \|ssp245 \|2020 \|2100 \|depthsurf
-\|sithick_ssp245_2020_2100_depthsurf \|Bio-Oracle SeaIceThickness
-\[depthSurf\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2551,10 +8923,37 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|sithick \|ssp370 \|2020 \|2100 \|depthsurf
-\|sithick_ssp370_2020_2100_depthsurf \|Bio-Oracle SeaIceThickness
-\[depthSurf\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2562,10 +8961,37 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|sithick \|ssp460 \|2020 \|2100 \|depthsurf
-\|sithick_ssp460_2020_2100_depthsurf \|Bio-Oracle SeaIceThickness
-\[depthSurf\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2573,10 +8999,37 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|sithick \|ssp585 \|2020 \|2100 \|depthsurf
-\|sithick_ssp585_2020_2100_depthsurf \|Bio-Oracle SeaIceThickness
-\[depthSurf\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaIceThickness
+</td>
+<td style="text-align:left;">
+sithick
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sithick_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaIceThickness \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sithick_max (Maximum
@@ -2584,848 +9037,3145 @@ SeaIceThickness, m) sithick_ltmax (Long-term maximum SeaIceThickness, m)
 sithick_mean (Average SeaIceThickness, m) sithick_ltmin (Long-term
 minimum SeaIceThickness, m) sithick_min (Minimum SeaIceThickness, m)
 sithick_range (Range SeaIceThickness, m) sithick_sd (Standard deviation
-SeaIceThickness, m) \| \|swd \|baseline \|2000 \|2019 \|depthmax
-\|swd_baseline_2000_2019_depthmax \|Bio-Oracle SeaWaterDirection
-\[depthMax\]Baseline 2000-2019. \|Uses attributes recommended by
-<https://cfconventions.org>
+SeaIceThickness, m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_baseline_2000_2019_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp119 \|2020
-\|2100 \|depthmax \|swd_ssp119_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp126 \|2020
-\|2100 \|depthmax \|swd_ssp126_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp245 \|2020
-\|2100 \|depthmax \|swd_ssp245_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp370 \|2020
-\|2100 \|depthmax \|swd_ssp370_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp460 \|2020
-\|2100 \|depthmax \|swd_ssp460_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp585 \|2020
-\|2100 \|depthmax \|swd_ssp585_2020_2100_depthmax \|Bio-Oracle
-SeaWaterDirection \[depthMax\]SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+swd_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMax\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|baseline \|2000
-\|2019 \|depthmean \|swd_baseline_2000_2019_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_baseline_2000_2019_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp119 \|2020
-\|2100 \|depthmean \|swd_ssp119_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp126 \|2020
-\|2100 \|depthmean \|swd_ssp126_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp245 \|2020
-\|2100 \|depthmean \|swd_ssp245_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp370 \|2020
-\|2100 \|depthmean \|swd_ssp370_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp460 \|2020
-\|2100 \|depthmean \|swd_ssp460_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp585 \|2020
-\|2100 \|depthmean \|swd_ssp585_2020_2100_depthmean \|Bio-Oracle
-SeaWaterDirection \[depthMean\]SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+swd_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMean\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|baseline \|2000
-\|2019 \|depthmin \|swd_baseline_2000_2019_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_baseline_2000_2019_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp119 \|2020
-\|2100 \|depthmin \|swd_ssp119_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp126 \|2020
-\|2100 \|depthmin \|swd_ssp126_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp245 \|2020
-\|2100 \|depthmin \|swd_ssp245_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp370 \|2020
-\|2100 \|depthmin \|swd_ssp370_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp460 \|2020
-\|2100 \|depthmin \|swd_ssp460_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp585 \|2020
-\|2100 \|depthmin \|swd_ssp585_2020_2100_depthmin \|Bio-Oracle
-SeaWaterDirection \[depthMin\]SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+swd_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthMin\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|baseline \|2000
-\|2019 \|depthsurf \|swd_baseline_2000_2019_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_baseline_2000_2019_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp119 \|2020
-\|2100 \|depthsurf \|swd_ssp119_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp126 \|2020
-\|2100 \|depthsurf \|swd_ssp126_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp245 \|2020
-\|2100 \|depthsurf \|swd_ssp245_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp370 \|2020
-\|2100 \|depthsurf \|swd_ssp370_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp460 \|2020
-\|2100 \|depthsurf \|swd_ssp460_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|swd \|ssp585 \|2020
-\|2100 \|depthsurf \|swd_ssp585_2020_2100_depthsurf \|Bio-Oracle
-SeaWaterDirection \[depthSurf\]SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterDirection
+</td>
+<td style="text-align:left;">
+swd
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+swd_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterDirection \[depthSurf\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): swd_max (Maximum SeaWaterDirection,
 degree) swd_ltmax (Long-term maximum SeaWaterDirection, degree) swd_mean
 (Average SeaWaterDirection, degree) swd_ltmin (Long-term minimum
 SeaWaterDirection, degree) swd_min (Minimum SeaWaterDirection, degree)
-swd_range (Range SeaWaterDirection, degree) \| \|sws \|baseline \|2000
-\|2019 \|depthmax \|sws_baseline_2000_2019_depthmax \|Bio-Oracle
-SeaWaterSpeed \[depthMax\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+swd_range (Range SeaWaterDirection, degree)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_baseline_2000_2019_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp119 \|2020 \|2100
-\|depthmax \|sws_ssp119_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp126 \|2020 \|2100
-\|depthmax \|sws_ssp126_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp245 \|2020 \|2100
-\|depthmax \|sws_ssp245_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp370 \|2020 \|2100
-\|depthmax \|sws_ssp370_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp460 \|2020 \|2100
-\|depthmax \|sws_ssp460_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp585 \|2020 \|2100
-\|depthmax \|sws_ssp585_2020_2100_depthmax \|Bio-Oracle SeaWaterSpeed
-\[depthMax\]SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+sws_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMax\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|baseline \|2000
-\|2019 \|depthmean \|sws_baseline_2000_2019_depthmean \|Bio-Oracle
-SeaWaterSpeed \[depthMean\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_baseline_2000_2019_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp119 \|2020 \|2100
-\|depthmean \|sws_ssp119_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp126 \|2020 \|2100
-\|depthmean \|sws_ssp126_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp245 \|2020 \|2100
-\|depthmean \|sws_ssp245_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp370 \|2020 \|2100
-\|depthmean \|sws_ssp370_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp460 \|2020 \|2100
-\|depthmean \|sws_ssp460_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp585 \|2020 \|2100
-\|depthmean \|sws_ssp585_2020_2100_depthmean \|Bio-Oracle SeaWaterSpeed
-\[depthMean\]SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+sws_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMean\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|baseline \|2000
-\|2019 \|depthmin \|sws_baseline_2000_2019_depthmin \|Bio-Oracle
-SeaWaterSpeed \[depthMin\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_baseline_2000_2019_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp119 \|2020 \|2100
-\|depthmin \|sws_ssp119_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp126 \|2020 \|2100
-\|depthmin \|sws_ssp126_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp245 \|2020 \|2100
-\|depthmin \|sws_ssp245_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp370 \|2020 \|2100
-\|depthmin \|sws_ssp370_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp460 \|2020 \|2100
-\|depthmin \|sws_ssp460_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp585 \|2020 \|2100
-\|depthmin \|sws_ssp585_2020_2100_depthmin \|Bio-Oracle SeaWaterSpeed
-\[depthMin\]SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+sws_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthMin\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|baseline \|2000
-\|2019 \|depthsurf \|sws_baseline_2000_2019_depthsurf \|Bio-Oracle
-SeaWaterSpeed \[depthSurf\]Baseline 2000-2019. \|Uses attributes
-recommended by <https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_baseline_2000_2019_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]Baseline 2000-2019.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp119 \|2020 \|2100
-\|depthsurf \|sws_ssp119_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp126 \|2020 \|2100
-\|depthsurf \|sws_ssp126_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp245 \|2020 \|2100
-\|depthsurf \|sws_ssp245_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp370 \|2020 \|2100
-\|depthsurf \|sws_ssp370_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp460 \|2020 \|2100
-\|depthsurf \|sws_ssp460_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|sws \|ssp585 \|2020 \|2100
-\|depthsurf \|sws_ssp585_2020_2100_depthsurf \|Bio-Oracle SeaWaterSpeed
-\[depthSurf\]SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SeaWaterSpeed
+</td>
+<td style="text-align:left;">
+sws
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+sws_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle SeaWaterSpeed \[depthSurf\]SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): sws_max (Maximum SeaWaterSpeed, m
 s**-1) sws_ltmax (Long-term maximum SeaWaterSpeed, m s**-1) sws_mean
 (Average SeaWaterSpeed, m s**-1) sws_ltmin (Long-term minimum
 SeaWaterSpeed, m s**-1) sws_min (Minimum SeaWaterSpeed, m s**-1)
-sws_range (Range SeaWaterSpeed, m s**-1) \| \|si \|baseline \|2000
-\|2018 \|depthmax \|si_baseline_2000_2018_depthmax \|Bio-Oracle Silicate
-\[depthMax\] Baseline 2000-2018. \|Uses attributes recommended by
-<https://cfconventions.org>
+sws_range (Range SeaWaterSpeed, m s**-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_baseline_2000_2018_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-’M-3) \| \|si \|ssp119 \|2020 \|2100 \|depthmax
-\|si_ssp119_2020_2100_depthmax \|Bio-Oracle Silicate \[depthMax\] SSP119
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp126
-\|2020 \|2100 \|depthmax \|si_ssp126_2020_2100_depthmax \|Bio-Oracle
-Silicate \[depthMax\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp126_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp245
-\|2020 \|2100 \|depthmax \|si_ssp245_2020_2100_depthmax \|Bio-Oracle
-Silicate \[depthMax\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp370
-\|2020 \|2100 \|depthmax \|si_ssp370_2020_2100_depthmax \|Bio-Oracle
-Silicate \[depthMax\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp460
-\|2020 \|2100 \|depthmax \|si_ssp460_2020_2100_depthmax \|Bio-Oracle
-Silicate \[depthMax\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp585
-\|2020 \|2100 \|depthmax \|si_ssp585_2020_2100_depthmax \|Bio-Oracle
-Silicate \[depthMax\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+si_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|baseline
-\|2000 \|2018 \|depthmean \|si_baseline_2000_2018_depthmean \|Bio-Oracle
-Silicate \[depthMean\] Baseline 2000-2018. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_baseline_2000_2018_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-’M-3) \| \|si \|ssp119 \|2020 \|2100 \|depthmean
-\|si_ssp119_2020_2100_depthmean \|Bio-Oracle Silicate \[depthMean\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp126
-\|2020 \|2100 \|depthmean \|si_ssp126_2020_2100_depthmean \|Bio-Oracle
-Silicate \[depthMean\] SSP126 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp126_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp245
-\|2020 \|2100 \|depthmean \|si_ssp245_2020_2100_depthmean \|Bio-Oracle
-Silicate \[depthMean\] SSP245 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp370
-\|2020 \|2100 \|depthmean \|si_ssp370_2020_2100_depthmean \|Bio-Oracle
-Silicate \[depthMean\] SSP370 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp460
-\|2020 \|2100 \|depthmean \|si_ssp460_2020_2100_depthmean \|Bio-Oracle
-Silicate \[depthMean\] SSP460 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp585
-\|2020 \|2100 \|depthmean \|si_ssp585_2020_2100_depthmean \|Bio-Oracle
-Silicate \[depthMean\] SSP585 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+si_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|baseline
-\|2000 \|2018 \|depthmin \|si_baseline_2000_2018_depthmin \|Bio-Oracle
-Silicate \[depthMin\] Baseline 2000-2018. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_baseline_2000_2018_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-’M-3) \| \|si \|ssp119 \|2020 \|2100 \|depthmin
-\|si_ssp119_2020_2100_depthmin \|Bio-Oracle Silicate \[depthMin\] SSP119
-2020-2100. \|Uses attributes recommended by <https://cfconventions.org>
+’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp126
-\|2020 \|2100 \|depthmin \|si_ssp126_2020_2100_depthmin \|Bio-Oracle
-Silicate \[depthMin\] SSP126 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp126_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp245
-\|2020 \|2100 \|depthmin \|si_ssp245_2020_2100_depthmin \|Bio-Oracle
-Silicate \[depthMin\] SSP245 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp370
-\|2020 \|2100 \|depthmin \|si_ssp370_2020_2100_depthmin \|Bio-Oracle
-Silicate \[depthMin\] SSP370 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp460
-\|2020 \|2100 \|depthmin \|si_ssp460_2020_2100_depthmin \|Bio-Oracle
-Silicate \[depthMin\] SSP460 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp585
-\|2020 \|2100 \|depthmin \|si_ssp585_2020_2100_depthmin \|Bio-Oracle
-Silicate \[depthMin\] SSP585 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+si_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|baseline
-\|2000 \|2018 \|depthsurf \|si_baseline_2000_2018_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] Baseline 2000-2018. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2018
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_baseline_2000_2018_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] Baseline 2000-2018.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-’M-3) \| \|si \|ssp119 \|2020 \|2100 \|depthsurf
-\|si_ssp119_2020_2100_depthsurf \|Bio-Oracle Silicate \[depthSurf\]
-SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp126
-\|2020 \|2100 \|depthsurf \|si_ssp126_2020_2100_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] SSP126 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp245
-\|2020 \|2100 \|depthsurf \|si_ssp245_2020_2100_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] SSP245 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp370
-\|2020 \|2100 \|depthsurf \|si_ssp370_2020_2100_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] SSP370 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp460
-\|2020 \|2100 \|depthsurf \|si_ssp460_2020_2100_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] SSP460 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|si \|ssp585
-\|2020 \|2100 \|depthsurf \|si_ssp585_2020_2100_depthsurf \|Bio-Oracle
-Silicate \[depthSurf\] SSP585 2020-2100. \|Uses attributes recommended
-by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silicate
+</td>
+<td style="text-align:left;">
+si
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+si_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle Silicate \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): si_max (Maximum Silicate, MMol’
 ‘M-3) si_ltmax (Long-term maximum Silicate, MMol’ ‘M-3) si_mean (Average
 Silicate, MMol’ ‘M-3) si_ltmin (Long-term minimum Silicate, MMol’ ‘M-3)
 si_min (Minimum Silicate, MMol’ ‘M-3) si_range (Range Silicate, MMol’
-‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3) \| \|clt
-\|baseline \|2000 \|2020 \|depthsurf \|clt_baseline_2000_2020_depthsurf
-\|Bio-Oracle TotalCloudFraction \[depthSurf\] Baseline 2000-2020. \|Uses
-attributes recommended by <https://cfconventions.org>
+‘M-3) si_sd (Standard deviation Silicate, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum TotalCloudFraction,
@@ -3433,10 +12183,37 @@ cdm_data_type = Grid VARIABLES (all of which use the dimensions
 clt_mean (Average TotalCloudFraction, (0 - 1)) clt_ltmin (Long-term
 minimum TotalCloudFraction, (0 - 1)) clt_min (Minimum
 TotalCloudFraction, (0 - 1)) clt_range (Range TotalCloudFraction, (0 -
-1)) \| \|clt \|ssp119 \|2020 \|2100 \|depthsurf
-\|clt_ssp119_2020_2100_depthsurf \|Bio-Oracle TotalCloudFraction
-\[depthSurf\] SSP119 2020-2100. \|Uses attributes recommended by
-<https://cfconventions.org>
+1))
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3444,10 +12221,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|clt \|ssp126 \|2020
-\|2100 \|depthsurf \|clt_ssp126_2020_2100_depthsurf \|Bio-Oracle
-TotalCloudFraction \[depthSurf\] SSP126 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp126
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp126_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP126 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3455,10 +12259,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|clt \|ssp245 \|2020
-\|2100 \|depthsurf \|clt_ssp245_2020_2100_depthsurf \|Bio-Oracle
-TotalCloudFraction \[depthSurf\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3466,10 +12297,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|clt \|ssp370 \|2020
-\|2100 \|depthsurf \|clt_ssp370_2020_2100_depthsurf \|Bio-Oracle
-TotalCloudFraction \[depthSurf\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3477,10 +12335,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|clt \|ssp460 \|2020
-\|2100 \|depthsurf \|clt_ssp460_2020_2100_depthsurf \|Bio-Oracle
-TotalCloudFraction \[depthSurf\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3488,10 +12373,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|clt \|ssp585 \|2020
-\|2100 \|depthsurf \|clt_ssp585_2020_2100_depthsurf \|Bio-Oracle
-TotalCloudFraction \[depthSurf\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalCloudFraction
+</td>
+<td style="text-align:left;">
+clt
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+clt_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalCloudFraction \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): clt_max (Maximum
@@ -3499,10 +12411,37 @@ TotalCloudFraction, 1) clt_ltmax (Long-term maximum
 TotalCloudFraction, 1) clt_mean (Average TotalCloudFraction, 1)
 clt_ltmin (Long-term minimum TotalCloudFraction, 1) clt_min (Minimum
 TotalCloudFraction, 1) clt_range (Range TotalCloudFraction, 1) clt_sd
-(Standard deviation TotalCloudFraction, 1) \| \|phyc \|baseline \|2000
-\|2020 \|depthmax \|phyc_baseline_2000_2020_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] Baseline 2000-2020. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Standard deviation TotalCloudFraction, 1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_baseline_2000_2020_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3510,81 +12449,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
 TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp119 \|2020 \|2100
-\|depthmax \|phyc_ssp119_2020_2100_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Range TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp119_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp245 \|2020 \|2100
-\|depthmax \|phyc_ssp245_2020_2100_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp370 \|2020 \|2100
-\|depthmax \|phyc_ssp370_2020_2100_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp460 \|2020 \|2100
-\|depthmax \|phyc_ssp460_2020_2100_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp585 \|2020 \|2100
-\|depthmax \|phyc_ssp585_2020_2100_depthmax \|Bio-Oracle
-TotalPhytoplankton \[depthMax\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|baseline \|2000 \|2020
-\|depthmean \|phyc_baseline_2000_2020_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] Baseline 2000-2020. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp119 \|2020 \|2100
-\|depthmean \|phyc_ssp119_2020_2100_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3593,10 +12488,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp245 \|2020 \|2100
-\|depthmean \|phyc_ssp245_2020_2100_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp245_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3605,10 +12527,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp370 \|2020 \|2100
-\|depthmean \|phyc_ssp370_2020_2100_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp370_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3617,10 +12566,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp460 \|2020 \|2100
-\|depthmean \|phyc_ssp460_2020_2100_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp460_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3629,10 +12605,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp585 \|2020 \|2100
-\|depthmean \|phyc_ssp585_2020_2100_depthmean \|Bio-Oracle
-TotalPhytoplankton \[depthMean\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmax
+</td>
+<td style="text-align:left;">
+phyc_ssp585_2020_2100_depthmax
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMax\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3641,10 +12644,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|baseline \|2000 \|2020
-\|depthmin \|phyc_baseline_2000_2020_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] Baseline 2000-2020. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_baseline_2000_2020_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3652,81 +12682,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
 TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp119 \|2020 \|2100
-\|depthmin \|phyc_ssp119_2020_2100_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Range TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp119_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
 
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp245 \|2020 \|2100
-\|depthmin \|phyc_ssp245_2020_2100_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp370 \|2020 \|2100
-\|depthmin \|phyc_ssp370_2020_2100_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp460 \|2020 \|2100
-\|depthmin \|phyc_ssp460_2020_2100_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp585 \|2020 \|2100
-\|depthmin \|phyc_ssp585_2020_2100_depthmin \|Bio-Oracle
-TotalPhytoplankton \[depthMin\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|baseline \|2000 \|2020
-\|depthsurf \|phyc_baseline_2000_2020_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] Baseline 2000-2020. \|Uses attributes
-recommended by <https://cfconventions.org>
-
-cdm_data_type = Grid VARIABLES (all of which use the dimensions
-\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
-TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
-MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
-‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
-(Range TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp119 \|2020 \|2100
-\|depthsurf \|phyc_ssp119_2020_2100_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] SSP119 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3735,10 +12721,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp245 \|2020 \|2100
-\|depthsurf \|phyc_ssp245_2020_2100_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] SSP245 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp245_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3747,10 +12760,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp370 \|2020 \|2100
-\|depthsurf \|phyc_ssp370_2020_2100_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] SSP370 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp370_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3759,10 +12799,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp460 \|2020 \|2100
-\|depthsurf \|phyc_ssp460_2020_2100_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] SSP460 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp460_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3771,10 +12838,37 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|phyc \|ssp585 \|2020 \|2100
-\|depthsurf \|phyc_ssp585_2020_2100_depthsurf \|Bio-Oracle
-TotalPhytoplankton \[depthSurf\] SSP585 2020-2100. \|Uses attributes
-recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmean
+</td>
+<td style="text-align:left;">
+phyc_ssp585_2020_2100_depthmean
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMean\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
@@ -3783,10 +12877,504 @@ TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
 MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
 ‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
 (Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
-TotalPhytoplankton, MMol’ ’M-3) \| \|kdpar_mean \|baseline \|2000 \|2020
-\|depthsurf \|kdpar_mean_baseline_2000_2020_depthsurf \|Bio-Oracle
-DiffuseAttenuationCoefficientPAR \[depthSurf\] Mean 2000-2020. \|Uses
-attributes recommended by <https://cfconventions.org>
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_baseline_2000_2020_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp119_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp245_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp370_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp460_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthmin
+</td>
+<td style="text-align:left;">
+phyc_ssp585_2020_2100_depthmin
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthMin\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] Baseline 2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp119
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp119_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] SSP119 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp245
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp245_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] SSP245 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp370
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp370_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] SSP370 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp460
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp460_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] SSP460 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TotalPhytoplankton
+</td>
+<td style="text-align:left;">
+phyc
+</td>
+<td style="text-align:left;">
+ssp585
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+2100
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+phyc_ssp585_2020_2100_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle TotalPhytoplankton \[depthSurf\] SSP585 2020-2100.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
+
+cdm_data_type = Grid VARIABLES (all of which use the dimensions
+\[time\]\[latitude\]\[longitude\]): phyc_max (Maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_ltmax (Long-term maximum
+TotalPhytoplankton, MMol’ ‘M-3) phyc_mean (Average TotalPhytoplankton,
+MMol’ ‘M-3) phyc_ltmin (Long-term minimum TotalPhytoplankton, MMol’
+‘M-3) phyc_min (Minimum TotalPhytoplankton, MMol’ ‘M-3) phyc_range
+(Range TotalPhytoplankton, MMol’ ‘M-3) phyc_sd (Standard deviation
+TotalPhytoplankton, MMol’ ’M-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DiffuseAttenuationCoefficientPAR
+</td>
+<td style="text-align:left;">
+kdpar_mean
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+kdpar_mean_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle DiffuseAttenuationCoefficientPAR \[depthSurf\] Mean
+2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): kdpar_mean_max (Maximum
@@ -3795,10 +13383,38 @@ maximum DiffuseAttenuationCoefficientPAR, m-1) kdpar_mean_mean (Average
 DiffuseAttenuationCoefficientPAR, m-1) kdpar_mean_ltmin (Long-term
 minimum DiffuseAttenuationCoefficientPAR, m-1) kdpar_mean_min (Minimum
 DiffuseAttenuationCoefficientPAR, m-1) kdpar_mean_range (Range
-DiffuseAttenuationCoefficientPAR, m-1) \| \|par_mean \|baseline \|2000
-\|2020 \|depthsurf \|par_mean_baseline_2000_2020_depthsurf \|Bio-Oracle
-PhotosyntheticallyAvailableRadiation \[depthSurf\] Mean 2000-2020.
-\|Uses attributes recommended by <https://cfconventions.org>
+DiffuseAttenuationCoefficientPAR, m-1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PhotosyntheticallyAvailableRadiation
+</td>
+<td style="text-align:left;">
+par_mean
+</td>
+<td style="text-align:left;">
+baseline
+</td>
+<td style="text-align:left;">
+2000
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+depthsurf
+</td>
+<td style="text-align:left;">
+par_mean_baseline_2000_2020_depthsurf
+</td>
+<td style="text-align:left;">
+Bio-Oracle PhotosyntheticallyAvailableRadiation \[depthSurf\] Mean
+2000-2020.
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): par_mean_max (Maximum
@@ -3809,16 +13425,47 @@ PhotosyntheticallyAvailableRadiation, einstein/m2/day) par_mean_ltmin
 (Long-term minimum PhotosyntheticallyAvailableRadiation,
 einstein/m2/day) par_mean_min (Minimum
 PhotosyntheticallyAvailableRadiation, einstein/m2/day) par_mean_range
-(Range PhotosyntheticallyAvailableRadiation, einstein/m2/day) \|
-\|terrain_characteristics \|NA \|NA \|NA \|NA \|terrain_characteristics
-\|Bio-Oracle Terrain characteristics \[Benthic\]. \|Uses attributes
-recommended by <https://cfconventions.org>
+(Range PhotosyntheticallyAvailableRadiation, einstein/m2/day)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Terrain
+</td>
+<td style="text-align:left;">
+terrain_characteristics
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+terrain_characteristics
+</td>
+<td style="text-align:left;">
+Bio-Oracle Terrain characteristics \[Benthic\].
+</td>
+<td style="text-align:left;">
+
+Uses attributes recommended by <https://cfconventions.org>
 
 cdm_data_type = Grid VARIABLES (all of which use the dimensions
 \[time\]\[latitude\]\[longitude\]): landmass (1) coastline (1)
 bathymetry_min (m) bathymetry_mean (m) bathymetry_max (m) area (m2)
 slope (degree) aspect (degree) topographic_position_index (1)
-terrain_ruggedness_index (1) \|
+terrain_ruggedness_index (1)
+</td>
+</tr>
+</tbody>
+</table>
 
 # Fetch some data to a temporary directory
 

@@ -1,6 +1,7 @@
 ---
 title: "biooracle"
 output: github_document
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +56,7 @@ biooracle_path() |> dir(full.names = TRUE)
 
 ```{r list_layers}
 list_layers() |>
-  knitr::kable()
+  kableExtra::kbl(longtable = TRUE)
 ```
 
 # Fetch some data to a temporary directory
