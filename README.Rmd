@@ -55,8 +55,7 @@ biooracle_path() |> dir(full.names = TRUE)
 [biooracler R package](https://github.com/bio-oracle/biooracler) provides a nice utility for obtaining a list of available data layers.  We have enhanced that by parsing the `dataset_id` so we can quickly filter for the desried dataset(s).  This will only work if [biooracler](https://github.com/bio-oracle/biooracler) is installed.
 
 ```{r list_layers}
-list_layers() |>
-  kableExtra::kbl(longtable = TRUE)
+list_layers()
 ```
 
 # Fetch some data to a temporary directory
