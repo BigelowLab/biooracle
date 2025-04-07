@@ -57,7 +57,7 @@ read_biooracle <- function(x,
     S <- stars::read_stars(filename, along = along, tolerance = tolerance)
     names(S) <- x$param[1]
   }
-  
+  stars::st_crs(S) <- 4326
   S
 }
 
