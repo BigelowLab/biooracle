@@ -9,7 +9,9 @@ read_biooracle(
   path = NULL,
   along = guess_along(x),
   tolerance = sqrt(.Machine$double.eps),
-  time_fmt = c("year", "Date")[1]
+  time_fmt = c("year", "Date")[1],
+  point = NA,
+  crs = 4326
 )
 }
 \arguments{
@@ -20,6 +22,10 @@ read_biooracle(
 \item{along}{see \link[stars:read_stars]{stars::read_stars} and \link{guess_along}}
 
 \item{tolerance}{num, for binding to allow for some slop}
+
+\item{point}{NA or logical to alter the \code{point} dimension attribute}
+
+\item{crs}{st_crs or numeric or char, the CRS desired}
 }
 \value{
 stars object

@@ -123,7 +123,7 @@ download_biooracle = function(dataset_id = "thetao_ssp119_2020_2100_depthmin",
                               base_url = biooracle_url(),
                               temp_path = biooracle_path("temp")){
   
-  if (!dir.exists(temp_path)) ok = make_path(temp_path)
+  if (!dir.exists(temp_path)) temp_path = make_path(temp_path)
 
   url = if (!is.null(constraints)){
     paste0(file.path(base_url, paste0(dataset_id,".nc?")), constraints)

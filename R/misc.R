@@ -11,3 +11,5 @@
 mgrepl <- function(pattern, x, op = `|`, ... ){
   Reduce(op, lapply(pattern, grepl, x, ...))
 }
+
+

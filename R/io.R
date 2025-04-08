@@ -23,12 +23,16 @@ guess_along <- function(x){
 #' @param path character path
 #' @param along see [stars::read_stars] and [guess_along]
 #' @param tolerance num, for binding to allow for some slop
+#' @param point NA or logical to alter the `point` dimension attribute
+#' @param crs st_crs or numeric or char, the CRS desired
 #' @return stars object
 read_biooracle <- function(x, 
                       path = NULL, 
                       along = guess_along(x),
                       tolerance = sqrt(.Machine$double.eps),
-                      time_fmt = c("year", "Date")[1]){
+                      time_fmt = c("year", "Date")[1], 
+                      point = NA,
+                      crs = 4326){
   
   x = dplyr::mutate(x,
                     var = paste(.data$param, .data$trt, sep = "_"),
@@ -58,10 +62,26 @@ read_biooracle <- function(x,
     names(S) <- x$param[1]
   }
 
-  sf::st_crs(S) <- 4326
-
-  S
+  sf::st_set_crs(S, crs) |>
+   set_point_attr(point)
 }
+
+
+#' Set the value of a stars object's `point` dimension attribute
+#' 
+#' @export
+#' @param x stars object
+#' @param point NA or logical
+#' @return the updated stars object
+set_point_attr = function(x, point = c(NA, TRUE, FALSE)[1]){
+  d = stars::st_dimensions(x)
+  d[["x"]]$point <- point[1]
+  d[["y"]]$point <- point[1]
+  stars::st_dimensions(x) <- d
+  x
+}
+
+
 
 #' Write a Bio-Oracle stars object guided by a database table
 #' 
