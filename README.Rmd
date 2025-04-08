@@ -123,3 +123,25 @@ And of course you can plot.
 ```{r plot_again}
 plot(x['thetao_mean'])
 ```
+
+# Terrain
+
+Terrain characteristics are served as a semi-standalone product.  We provide tools for allowing you to download and archive terrain data (see `fetch_terrain()`) and read terrain data (`read_terrain()`).
+
+
+Here we downlaod terrian data for our study area. 
+
+```{r fetch_terrain}
+x = fetch_terrain(archive = TRUE,
+                  bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7),
+                  data_dir = nwa_path)
+x
+```
+
+
+And read some back in.
+
+```{r read_terrain}
+y = read_terrain(what = c("bathymetry_mean", "slope", "terrain_ruggedness_index"))
+plot(y["terrain_ruggedness_index"], axes = TRUE)
+```

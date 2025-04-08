@@ -43,8 +43,9 @@ nwa_path = biooracle_path("nwa") |> make_path()
 biooracle_path() |> dir(full.names = TRUE)
 ```
 
-    ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa" 
-    ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"
+    ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa"    
+    ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"   
+    ## [3] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/terrain"
 
 # List available data layers
 
@@ -220,10 +221,10 @@ x = db |>
     ## thetao_range  287604
     ## thetao_sd     287604
     ## dimension(s):
-    ##      from  to offset delta x/y
-    ## x       1 691    -77  0.05 [x]
-    ## y       1 405  56.75 -0.05 [y]
-    ## time    1   3   2070    10
+    ##      from  to offset delta refsys x/y
+    ## x       1 691    -77  0.05 WGS 84 [x]
+    ## y       1 405  56.75 -0.05 WGS 84 [y]
+    ## time    1   3   2070    10     NA
 
 And of course you can plot.
 
@@ -234,3 +235,61 @@ plot(x['thetao_mean'])
     ## downsample set to 1
 
 ![](README_files/figure-gfm/plot_again-1.png)<!-- -->
+
+# Terrain
+
+Terrain characteristics are served as a semi-standalone product. We
+provide tools for allowing you to download and archive terrain data (see
+`fetch_terrain()`) and read terrain data (`read_terrain()`).
+
+Here we downlaod terrian data for our study area.
+
+``` r
+x = fetch_terrain(archive = TRUE,
+                  bb = c(xmin = -77, xmax = -42.5, ymin = 36.5, ymax = 56.7),
+                  data_dir = nwa_path)
+```
+
+    ## area, aspect, bathymetry_max, bathymetry_mean, bathymetry_min, coastline, landmass, slope, terrain_ruggedness_index, topographic_position_index,
+
+``` r
+x
+```
+
+    ## stars object with 2 dimensions and 10 attributes
+    ## attribute(s):
+    ##                                         Min.       1st Qu.        Median
+    ## area [m^2]                      1.692332e+01    19.9729965    22.1997646
+    ## aspect [°]                      0.000000e+00    86.4516358   149.9867376
+    ## bathymetry_max [m]             -5.992000e+03 -4725.0000000 -3331.0000000
+    ## bathymetry_mean [m]            -5.947861e+03 -4691.1804199 -3283.1943359
+    ## bathymetry_min [m]             -5.873000e+03 -4654.0000000 -3229.0000000
+    ## coastline [1]                   1.000000e+00     1.0000000     1.0000000
+    ## landmass [1]                    1.000000e+00     1.0000000     1.0000000
+    ## slope [°]                       1.868605e-04     0.1213754     0.3171763
+    ## terrain_ruggedness_index [1]    2.881918e-01    10.2154236    23.8368073
+    ## topographic_position_index [1] -7.703681e+02    -7.8559723    -0.2778320
+    ##                                         Mean      3rd Qu.       Max.   NA's
+    ## area [m^2]                        21.6850430   23.6145159   24.75821  95868
+    ## aspect [°]                       159.7517073  223.9874795  359.99994  95868
+    ## bathymetry_max [m]             -2697.4030937 -239.0000000    0.00000  95868
+    ## bathymetry_mean [m]            -2659.1993956 -215.4583359    0.00000  95868
+    ## bathymetry_min [m]             -2620.5722198 -194.0000000    0.00000  95868
+    ## coastline [1]                      1.0000000    1.0000000    1.00000 274801
+    ## landmass [1]                       1.0000000    1.0000000    1.00000  95868
+    ## slope [°]                          0.6484734    0.7387332   18.34382  95868
+    ## terrain_ruggedness_index [1]      46.7541411   52.4096832 1375.70135  95868
+    ## topographic_position_index [1]    -0.3759919    6.6007016 1250.09727  95868
+    ## dimension(s):
+    ##   from  to offset delta x/y
+    ## x    1 691    -77  0.05 [x]
+    ## y    1 405  56.75 -0.05 [y]
+
+And read some back in.
+
+``` r
+y = read_terrain(what = c("bathymetry_mean", "slope", "terrain_ruggedness_index"))
+plot(y["terrain_ruggedness_index"], axes = TRUE)
+```
+
+![](README_files/figure-gfm/read_terrain-1.png)<!-- -->
