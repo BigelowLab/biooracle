@@ -16,9 +16,14 @@ From CRAN
 - [dplyr](https://CRAN.R-project.org/package=dplyr)
 - [tidyr](https://CRAN.R-project.org/package=tidyr)
 
+From github
+
+- [biooracler](https://github.com/bio-oracle/biooracler)
+
 # Installation
 
     # install.packages(remotes)
+    remotes::install_github("bio-oracle/biooracler")
     remotes::install_github("BigelowLab/biooracle")
 
 # Set up a data directory
@@ -43,9 +48,8 @@ nwa_path = biooracle_path("nwa") |> make_path()
 biooracle_path() |> dir(full.names = TRUE)
 ```
 
-    ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa"    
-    ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"   
-    ## [3] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/terrain"
+    ## [1] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/nwa" 
+    ## [2] "/Users/ben/Library/CloudStorage/Dropbox/data/biooracle/temp"
 
 # List available data layers
 
@@ -130,7 +134,7 @@ x
 
 We often save the data in a directory structure aong with a simple table
 that catalogs the contents of the directory. The `archive_biooracle()`
-function will split up the fecthed data and save in a logical data
+function will split up the fetched data and save in a logical data
 structure. We provide the data path, in this case for the Northwest
 Atlantic (nwa).
 

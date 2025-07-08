@@ -21,11 +21,15 @@ From CRAN
   + [dplyr](https://CRAN.R-project.org/package=dplyr)
   + [tidyr](https://CRAN.R-project.org/package=tidyr)
   
+From github
+
+  + [biooracler](https://github.com/bio-oracle/biooracler)
 
 # Installation
 
 ```
 # install.packages(remotes)
+remotes::install_github("bio-oracle/biooracler")
 remotes::install_github("BigelowLab/biooracle")
 ```
 
@@ -81,7 +85,7 @@ x
 
 # Archiving in a local database
 
-We often save the data in a directory structure aong with a simple table that catalogs the contents of the directory.  The `archive_biooracle()` function will split up the fecthed data and save in a logical data structure.  We provide the data path, in this case for the Northwest Atlantic (nwa).
+We often save the data in a directory structure aong with a simple table that catalogs the contents of the directory.  The `archive_biooracle()` function will split up the fetched data and save in a logical data structure.  We provide the data path, in this case for the Northwest Atlantic (nwa).
 
 ```{r archive}
 archive_biooracle(newfile, path = nwa_path)
